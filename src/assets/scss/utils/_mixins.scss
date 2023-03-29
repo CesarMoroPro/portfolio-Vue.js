@@ -1,0 +1,3 @@
+@mixin text-shadow-for-pulse-effect($color) {
+        text-shadow: -3px 0px 3px $color, 3px 0px 3px $color;
+}

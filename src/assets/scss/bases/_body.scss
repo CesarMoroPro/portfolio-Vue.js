@@ -1,0 +1,30 @@
+body {
+
+        margin: auto;
+        min-width: $min-width;
+
+        h1, h2, h3 {
+                font-family: 'Wallpoet';
+                text-transform: uppercase;
+        }
+
+        h1 {
+                font-size: 3em;
+                color: black;
+
+                // Ajouter un text-shadow via une mixin
+                @include text-shadow-for-pulse-effect($light-green);
+        }
+
+        p, li {
+                font-family: Montserrat;
+        }
+         
+        //* Puisqu'il pourra y avoir différents h2, h3, ..., (couleurs, fonds, tailles), les propriétés sont définies dans le fichier selon leur rôle !
+}
+
+.test {
+        background-color: blue;
+        width: 100%;
+        height: 1200px;
+}

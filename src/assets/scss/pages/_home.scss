@@ -1,0 +1,118 @@
+.main-div {
+
+        .skills {
+                padding: 50px 0 15px;
+                background: $black;
+                background: $gradient-black-dark-green-black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                .left, .right {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 5px;
+                        margin-bottom: 30px;
+                }
+        
+                //= Tablette et +
+                @media all and (min-width: ($mobile-max+1)) {
+        
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+        
+                        .left {
+                                width: 50%;
+                        }
+        
+                        .right {
+                                width: 50%;
+                        }
+                }
+        }
+        
+
+        .slides-div {
+                background: $black;
+                background: $gradient-black-dark-green-black;
+
+                h2 {
+                        text-align: center;
+                }
+
+                .one-slide {
+                        margin: 0px 5px 10px;
+                        min-width: ($min-width - 10px);
+                        border: solid 1px $light-green;
+                        border-radius: 6px;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        padding: 3px;
+                }
+
+                .title-and-date {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        &__title {
+                                color: $light-green;
+                                font-size: 1.2em;
+                        }
+
+                        &__date {
+                                font-size: 0.7em;
+                        }
+                }
+
+                .img-and-tags {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        &__img {
+                                width: 50%;
+                        }
+
+                        &__tags {
+                                width: 50%;
+
+                                .tag {
+                                        border: $white solid 1px;
+                                }
+                        }
+                }
+        }
+
+
+        h2 {
+                margin-bottom: 10px;
+                color: $light-green;
+                font-size: 1.4em;
+        }
+
+        p {
+                color: $white;
+                line-height: 25px;
+        }
+        
+
+        
+
+
+}
+
+.test {
+        margin-top: 10px;
+}   

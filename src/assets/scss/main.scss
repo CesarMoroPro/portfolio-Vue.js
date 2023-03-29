@@ -1,3 +1,20 @@
-h1 {
-        color: red;
-}
+//^ Import des opérateurs mathématiques Sass (notamment la division)
+@use "sass:math";
+
+//^ Import de reset.css
+@import '../../../node_modules/reset.css/reset.css';
+
+//^ Import des fichiers UTILS
+@import './utils/variables';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/keyframes';
+
+//^ Import des fichiers BASES
+@import './bases/body';
+
+//^ Import des fichiers LAYOUTS
+@import './layouts/header';
+
+//^ Import des fichiers PAGES
+@import './pages/home';

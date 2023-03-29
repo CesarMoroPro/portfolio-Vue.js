@@ -1,0 +1,18 @@
+$min-width: 400px;
+$mobile-max: 650px;
+$tablet-max: 850px;
+$desktop-max: 1100px;
+$big-max: 1500px;
+$giant-max: 2000px;
+
+//^ COLORS 
+$light-green: #00ff00;
+$dark-green: #1e7b1e;
+$black: #000000;
+$white: #fcfffd;
+
+$gradient-light-green: linear-gradient(to top, $light-green 0%, $black 100%);
+$gradient-black-light-green-black: linear-gradient(to bottom, $black 15%, $light-green 50%, $black 85%);
+$gradient-black-dark-green-black: linear-gradient(to bottom, $black 15%, $dark-green 50%, $black 85%);
+$gradient-black-white-black: linear-gradient(to bottom, $black 15%, $white 50%, $black 85%);
+

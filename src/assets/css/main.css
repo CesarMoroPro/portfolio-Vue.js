@@ -1,5 +1,461 @@
-h1 {
-  color: red;
+@import '../../../node_modules/reset.css/reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Wallpoet&display=swap");
+@keyframes k2000Laser {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+body {
+  margin: auto;
+  min-width: 400px;
+}
+body h1, body h2, body h3 {
+  font-family: "Wallpoet";
+  text-transform: uppercase;
+}
+body h1 {
+  font-size: 3em;
+  color: black;
+  text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
+}
+body p, body li {
+  font-family: Montserrat;
+}
+
+.test {
+  background-color: blue;
+  width: 100%;
+  height: 1200px;
+}
+
+.header-main {
+  background-color: black;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media all and (max-width: 650px) {
+  .header-main {
+    padding-top: 100px;
+  }
+}
+@media all and (min-width: 651px) {
+  .header-main {
+    padding-top: 200px;
+  }
+}
+.header-main .all-logos {
+  width: 100%;
+  height: 100%;
+}
+.header-main .all-logos .logos {
+  width: 65px;
+  height: 65px;
+}
+@media all and (max-width: 650px) {
+  .header-main .all-logos .logo__html {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    z-index: 1;
+  }
+  .header-main .all-logos .logo__css {
+    position: absolute;
+    top: 120px;
+    right: 15px;
+  }
+  .header-main .all-logos .logo__javascript {
+    position: absolute;
+    top: 280px;
+    left: 50px;
+  }
+  .header-main .all-logos .logo__node {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+  }
+  .header-main .all-logos .logo__php {
+    position: absolute;
+    top: 35px;
+    right: 115px;
+  }
+  .header-main .all-logos .logo__sass {
+    position: absolute;
+    top: 250px;
+    right: 35px;
+  }
+  .header-main .all-logos .logo__vue {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .header-main .all-logos .logo__html {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+  }
+  .header-main .all-logos .logo__css {
+    position: absolute;
+    top: 220px;
+    right: 90px;
+  }
+  .header-main .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 115px;
+  }
+  .header-main .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 65px;
+  }
+  .header-main .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 220px;
+  }
+  .header-main .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 130px;
+  }
+  .header-main .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 180px;
+  }
+}
+@media all and (min-width: 851px) and (max-width: 1100px) {
+  .header-main .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+  }
+  .header-main .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 160px;
+  }
+  .header-main .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 200px;
+  }
+  .header-main .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 165px;
+  }
+  .header-main .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 295px;
+  }
+  .header-main .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 230px;
+  }
+  .header-main .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 280px;
+  }
+}
+@media all and (min-width: 1101px) and (max-width: 1500px) {
+  .header-main .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 210px;
+    z-index: 3;
+  }
+  .header-main .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 280px;
+  }
+  .header-main .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 330px;
+    z-index: 2;
+  }
+  .header-main .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 280px;
+  }
+  .header-main .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 440px;
+  }
+  .header-main .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 350px;
+  }
+  .header-main .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    z-index: 4;
+  }
+}
+@media all and (min-width: 1501px) and (max-width: 2000px) {
+  .header-main .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 370px;
+    z-index: 3;
+  }
+  .header-main .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 420px;
+  }
+  .header-main .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 490px;
+    z-index: 2;
+  }
+  .header-main .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 450px;
+  }
+  .header-main .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 650px;
+  }
+  .header-main .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 580px;
+  }
+  .header-main .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 600px;
+    z-index: 4;
+  }
+}
+@media all and (min-width: 2001px) {
+  .header-main .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+    z-index: 3;
+  }
+  .header-main .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 650px;
+  }
+  .header-main .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 700px;
+    z-index: 2;
+  }
+  .header-main .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 700px;
+  }
+  .header-main .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 900px;
+  }
+  .header-main .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 800px;
+  }
+  .header-main .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 850px;
+    z-index: 4;
+  }
+}
+.header-main .ID {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.header-main .ID__pic {
+  z-index: 5;
+  position: relative;
+  border-radius: 180px;
+  width: 310px;
+  height: 315px;
+}
+.header-main .ID__pic .effect-zone {
+  z-index: 6;
+  background-color: black;
+  border-radius: 180px;
+  width: 310px;
+  height: 315px;
+  position: absolute;
+  top: 0;
+}
+.header-main .ID__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+}
+.header-main .ID__name .mask {
+  z-index: 6;
+  width: 385px;
+  height: 80px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: -2.5px;
+}
+.header-main .ID__name .laser {
+  z-index: 7;
+  width: 385px;
+  height: 3px;
+  border-radius: 6px;
+  background-color: #00ff00;
+  box-shadow: 3px 0px 2px 2px rgba(0, 255, 0, 0.7), -3px 0px 2px 2px rgba(0, 255, 0, 0.7);
+  position: abolute;
+  top: 0;
+  left: -2.5px;
+}
+.header-main .ID__name .go-down {
+  transition-property: position;
+  transition-duration: 3000;
+  position: absolute;
+  top: 83px;
+}
+.header-main .ID__name h2 {
+  font-size: 2em;
+  color: black;
+  text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
+}
+.header-main .k2000 {
+  width: 100%;
+  height: 10px;
+  background-color: #00ff00;
+  background: linear-gradient(to top, #00ff00 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header-main .k2000__mobile-element {
+  width: 50px;
+  height: 8.5px;
+  background-color: red;
+  animation: k2000Laser 2s linear;
+}
+
+.main-div .skills {
+  padding: 50px 0 15px;
+  background: #000000;
+  background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .skills .left, .main-div .skills .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+@media all and (min-width: 651px) {
+  .main-div .skills {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main-div .skills .left {
+    width: 50%;
+  }
+  .main-div .skills .right {
+    width: 50%;
+  }
+}
+.main-div .slides-div {
+  background: #000000;
+  background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
+}
+.main-div .slides-div h2 {
+  text-align: center;
+}
+.main-div .slides-div .one-slide {
+  margin: 0px 5px 10px;
+  min-width: 390px;
+  border: solid 1px #00ff00;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.main-div .slides-div .title-and-date {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-div .slides-div .title-and-date__title {
+  color: #00ff00;
+  font-size: 1.2em;
+}
+.main-div .slides-div .title-and-date__date {
+  font-size: 0.7em;
+}
+.main-div .slides-div .img-and-tags {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-div .slides-div .img-and-tags__img {
+  width: 50%;
+}
+.main-div .slides-div .img-and-tags__tags {
+  width: 50%;
+}
+.main-div .slides-div .img-and-tags__tags .tag {
+  border: #fcfffd solid 1px;
+}
+.main-div h2 {
+  margin-bottom: 10px;
+  color: #00ff00;
+  font-size: 1.4em;
+}
+.main-div p {
+  color: #fcfffd;
+  line-height: 25px;
+}
+
+.test {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
