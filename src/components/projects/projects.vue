@@ -1,8 +1,11 @@
 <template>
-        <div class="all-projects">
-                <h2>Mes réalisations</h2>
+        <h2>Mes réalisations</h2>
 
+        <categoriesComponent></categoriesComponent>
+
+        <div class="all-projects">
                 <div class="one-project" v-for="(project, index) in projects" :key="index">
+
                         <div class="title-and-date">
                                 <div class="title-and-date__title">
                                         <h3>{{ project.title }}</h3>
@@ -21,16 +24,22 @@
                                 </div>
                         </div>
                                 
-                        <div class="excerpt">
+                        <div class="excerpt-and-github">
                                 <p>{{ project.excerpt }}</p>
                                 <a :href="project.github">{{ project.github }}</a>
                         </div>
+
                 </div>
         </div>
 </template>
 
 
 <script>
+import Categories from "../filters/categories.vue";
+import Technos from "../filters/technos.vue";
+import Tools from "../filters//tools.vue";
+
+
 export default {
         data() {
                 return {
@@ -47,7 +56,7 @@ export default {
                                 },
 
                                 {
-                                        title: "DeadPool 2 !",
+                                        title: "Vivement DeadPool 3 !",
                                         date: "30/04/2023",
                                         image: "./src/assets/img/vue.svg",
                                         tags: [
@@ -59,5 +68,11 @@ export default {
                         ]
                 }
         },
+
+        components: {
+                categoriesComponent: Categories,
+                technosComponent: Technos,
+                toolsComponent: Tools,
+        }
 };
 </script>

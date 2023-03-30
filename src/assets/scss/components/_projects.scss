@@ -1,0 +1,88 @@
+.main-div {
+
+        .projects-div {
+                background: $black;
+                background: $gradient-black-dark-green-black;
+                padding: 50px 0 15px;
+
+                h2 {
+                        text-align: center;
+                }
+
+                .all-projects {
+
+                        //= Tablette et +
+                        @media all and (min-width: ($mobile-max+1)) {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                                align-items: center;
+                        }
+
+                        .one-project {
+                                position: relative;
+                                margin: 0px 5px 10px;
+                                min-width: ($min-width - 10px);
+                                height: 500px;
+                                border: solid 1px $light-green;
+                                border-radius: 6px;
+                                background: $black;
+                                background: $gradient-dark-green-black-dark-green;
+        
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+        
+                                padding: 3px;
+
+                                .title-and-date {
+                                        width: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        margin-top: 5px;
+
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                
+                                        &__title {
+                                                color: $light-green;
+                                                font-size: 1.2em;
+                                        }
+                
+                                        &__date {
+                                                font-size: 0.7em;
+                                        }
+                                }
+                
+                                .img-and-tags {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                
+                                        &__img {
+                                                width: 50%;
+                                                border-radius: 8px;
+                                        }
+                
+                                        &__tags {
+                                                width: 50%;
+                
+                                                .tag {
+                                                        border: $white solid 1px;
+                                                }
+                                        }
+                                }
+
+                                .excerpt-and-github {
+                                        position: absolute;
+                                        bottom: 0;
+                                        margin-bottom: 5px;
+                                }
+                        }
+                }
+        }
+}

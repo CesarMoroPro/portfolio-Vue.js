@@ -10,7 +10,7 @@
         <softskillsComponent></softskillsComponent>
       </div>
       
-      <div class="slides-div">
+      <div class="projects-div">
         <projectsComponent></projectsComponent>
       </div>
     </main>

@@ -1,0 +1,38 @@
+.main-div {
+
+        .skills {
+                padding: 50px 0 15px;
+                background: $black;
+                background: $gradient-black-dark-green-black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                .left, .right {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 5px;
+                        margin-bottom: 30px;
+                }
+        
+                //= Tablette et +
+                @media all and (min-width: ($mobile-max+1)) {
+        
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+        
+                        .left {
+                                width: 50%;
+                        }
+        
+                        .right {
+                                width: 50%;
+                        }
+                }
+        }
+}
