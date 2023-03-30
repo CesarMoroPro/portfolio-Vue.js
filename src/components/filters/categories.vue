@@ -24,19 +24,19 @@ export default {
                                         name: "Front-end", 
                                         isSelected: true,
                                         isHovered: false,
-                                        total: "0",
+                                        total: 0,
                                 },
                                 {
                                         name: "Back-end", 
                                         isSelected: true,
                                         isHovered: false,
-                                        total: "0",
+                                        total: 0,
                                 },
                                 {
                                         name: "FullStack", 
                                         isSelected: true,
                                         isHovered: false,
-                                        total: "0",
+                                        total: 0,
                                 }
                                
                         ],

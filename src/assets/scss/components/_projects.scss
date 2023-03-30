@@ -11,9 +11,13 @@
 
                 .all-projects {
 
+                        display: flex;
+                        flex-direction: column;
+                        align-items: space-evenly;
+                        justify-content: center;
+
                         //= Tablette et +
                         @media all and (min-width: ($mobile-max+1)) {
-                                display: flex;
                                 flex-direction: row;
                                 justify-content: space-evenly;
                                 align-items: center;
@@ -21,13 +25,13 @@
 
                         .one-project {
                                 position: relative;
-                                margin: 0px 5px 10px;
+                                margin: 0px 5px 10px;;
                                 min-width: ($min-width - 10px);
-                                height: 500px;
                                 border: solid 1px $light-green;
                                 border-radius: 6px;
                                 background: $black;
                                 background: $gradient-dark-green-black-dark-green;
+                                box-shadow: 0px 2px 5px 0px rgba($black, 0.7);
         
                                 display: flex;
                                 flex-direction: column;
@@ -60,20 +64,25 @@
                                 .img-and-tags {
                                         width: 100%;
                                         display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                
+                                        flex-direction: column;
+                                        align-items: center;
+
                                         &__img {
-                                                width: 50%;
                                                 border-radius: 8px;
                                         }
-                
-                                        &__tags {
-                                                width: 50%;
-                
-                                                .tag {
-                                                        border: $white solid 1px;
-                                                }
+
+                                        /*
+                                        * &__projects-technos {
+                                        *        Propriétés définies dans le fichier scss > components > _filters.scss
+                                        }
+                                        */
+
+                                         //= Tablette et +
+                                        @media all and (min-width: ($mobile-max+1)) {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-between;
                                         }
                                 }
 

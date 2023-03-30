@@ -37,6 +37,55 @@
                 }
         }
 
+        .img-and-tags {
+
+                &__projects-technos {
+                        margin: 15px 10px 10px;                        
+
+                        .technos-container {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                                line-height: 25px;
+                                
+                                .techno {
+                                        border: $white solid 1px;
+                                        background-color: rgba($white, 0.75);
+                                        border-radius: 4px;
+                                        padding: 0 10px;
+                                        margin: 5px 5px;
+                                        list-style-type: none;
+                                }
+                        }
+                }
+
+                &__projects-tools {
+                        margin: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        line-height: 25px;
+
+                        .tools-container {
+                                display: flex;
+                                flex-direction: row;
+
+                                .tool {
+                                        border: $white solid 1px;
+                                        background-color: rgba($white, 0.75);
+                                        border-radius: 4px;
+                                        padding: 0 10px;
+                                        margin: 5px 5px;
+                                        list-style-type: none;
+                                }
+                        }
+
+
+                }
+        }
+
         .mini-number {
                 font-size: 0.8em;
         }

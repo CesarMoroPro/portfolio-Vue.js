@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../../../node_modules/reset.css/reset.css';
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Wallpoet&display=swap");
 @keyframes k2000Laser {
@@ -419,9 +420,14 @@ body h1 {
 .main-div .projects-div h2 {
   text-align: center;
 }
+.main-div .projects-div .all-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: center;
+}
 @media all and (min-width: 651px) {
   .main-div .projects-div .all-projects {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -431,11 +437,11 @@ body h1 {
   position: relative;
   margin: 0px 5px 10px;
   min-width: 390px;
-  height: 500px;
   border: solid 1px #00ff00;
   border-radius: 6px;
   background: #000000;
   background: linear-gradient(to bottom, #1e7b1e 15%, #000000 50%, #1e7b1e 85%);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -462,18 +468,24 @@ body h1 {
 .main-div .projects-div .all-projects .one-project .img-and-tags {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  /*
+  * &__projects-technos {
+  *        Propriétés définies dans le fichier scss > components > _filters.scss
+  }
+  */
 }
 .main-div .projects-div .all-projects .one-project .img-and-tags__img {
-  width: 50%;
   border-radius: 8px;
 }
-.main-div .projects-div .all-projects .one-project .img-and-tags__tags {
-  width: 50%;
-}
-.main-div .projects-div .all-projects .one-project .img-and-tags__tags .tag {
-  border: #fcfffd solid 1px;
+@media all and (min-width: 651px) {
+  .main-div .projects-div .all-projects .one-project .img-and-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .main-div .projects-div .all-projects .one-project .excerpt-and-github {
   position: absolute;
@@ -512,8 +524,52 @@ body h1 {
   border: solid 1px #fcfffd;
   text-decoration: underline;
 }
+.main-div .img-and-tags__projects-technos {
+  margin: 15px 10px 10px;
+}
+.main-div .img-and-tags__projects-technos .technos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  line-height: 25px;
+}
+.main-div .img-and-tags__projects-technos .technos-container .techno {
+  border: #fcfffd solid 1px;
+  background-color: rgba(252, 255, 253, 0.75);
+  border-radius: 4px;
+  padding: 0 10px;
+  margin: 5px 5px;
+  list-style-type: none;
+}
+.main-div .img-and-tags__projects-tools {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  line-height: 25px;
+}
+.main-div .img-and-tags__projects-tools .tools-container {
+  display: flex;
+  flex-direction: row;
+}
+.main-div .img-and-tags__projects-tools .tools-container .tool {
+  border: #fcfffd solid 1px;
+  background-color: rgba(252, 255, 253, 0.75);
+  border-radius: 4px;
+  padding: 0 10px;
+  margin: 5px 5px;
+  list-style-type: none;
+}
 .main-div .mini-number {
   font-size: 0.8em;
+}
+
+.horizontal-separator {
+  width: 85%;
+  height: 1px;
+  background-color: #fcfffd;
 }
 
 /*# sourceMappingURL=main.css.map */
