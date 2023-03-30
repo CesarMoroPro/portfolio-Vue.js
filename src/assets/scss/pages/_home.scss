@@ -37,7 +37,7 @@
         }
         
 
-        .slides-div {
+        .all-projects {
                 background: $black;
                 background: $gradient-black-dark-green-black;
 
@@ -45,11 +45,13 @@
                         text-align: center;
                 }
 
-                .one-slide {
+                .one-project {
                         margin: 0px 5px 10px;
                         min-width: ($min-width - 10px);
                         border: solid 1px $light-green;
                         border-radius: 6px;
+                        background: $white;
+                        background: $gradient-black-dark-green-black;
 
                         display: flex;
                         flex-direction: column;

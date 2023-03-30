@@ -1,39 +1,32 @@
 <template>
-        <swiper-container :slides-per-view="1" :loop="true" :navigation="true" :scrollbar="true" :breakpoints="{ 651: slidePerView='2'}">
-                <swiper-slide v-for="(project, index) in projects" :key="index">
-                        <div class="one-slide">
-                                <div class="title-and-date">
-                                        <div class="title-and-date__title">
-                                                <h3>{{ project.title }}</h3>
-                                        </div>
-                                        <div class="title-and-date__date">
-                                                <p>{{ project.date }}</p>
-                                        </div>
-                                </div>
+        <div class="all-projects">
+                <h2>Mes réalisations</h2>
 
-                                <div class="img-and-tags">
-                                        <div class="img-and-tags__img">
-                                                <img :src="project.image" />
-                                        </div>
-                                        <div class="img-and-tags__tags" v-for="(tag, index) in projects.tags" :key="index">
-                                                <p class="tag"> {{ tag }} </p>
-                                        </div>
+                <div class="one-project" v-for="(project, index) in projects" :key="index">
+                        <div class="title-and-date">
+                                <div class="title-and-date__title">
+                                        <h3>{{ project.title }}</h3>
                                 </div>
-                                        
-                                <div class="excerpt">
-                                        <p>{{ project.excerpt }}</p>
+                                <div class="title-and-date__date">
+                                        <p>{{ project.date }}</p>
                                 </div>
-                                        
                         </div>
-                </swiper-slide>
 
-
-                <swiper-slide>Element 2</swiper-slide>
-                <swiper-slide>Element 3</swiper-slide>
-                <swiper-slide>Element 4</swiper-slide>
-                <swiper-slide>Element 5</swiper-slide>
-                <swiper-slide>Element 6</swiper-slide>
-        </swiper-container>
+                        <div class="img-and-tags">
+                                <div class="img-and-tags__img">
+                                        <img :src="project.image" />
+                                </div>
+                                <div class="img-and-tags__tags" v-for="(tag, index) in projects.tags" :key="index">
+                                        <p class="tag"> {{ tag }} </p>
+                                </div>
+                        </div>
+                                
+                        <div class="excerpt">
+                                <p>{{ project.excerpt }}</p>
+                                <a :href="project.github">{{ project.github }}</a>
+                        </div>
+                </div>
+        </div>
 </template>
 
 
@@ -50,6 +43,7 @@ export default {
                                                 "HTML", "CSS", "JavaScript", "Vue 3"
                                         ],
                                         excerpt: "Ceci est le résumé du projet statique",
+                                        github: "lien vers le repo GitHub",
                                 },
 
                                 {
@@ -60,6 +54,7 @@ export default {
                                                 "HTML", "CSS", "JavaScript", "Vue 3"
                                         ],
                                         excerpt: "Un autre résumé",
+                                        github: "lien vers le repo GitHub",
                                 }
                         ]
                 }

@@ -20,6 +20,7 @@
 
 <!--= ---------- SCRIPT ---------- -->
 <script>
+// Import des SFCs
 import Hardskills from "./components/skills/hardskills.vue";
 import Softskills from "./components/skills/softskills.vue";
 import Projects from "./components/projects/projects.vue";

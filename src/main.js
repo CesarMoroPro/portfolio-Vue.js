@@ -13,7 +13,7 @@
 import '../node_modules/rellax/rellax.min.js';
 
 // Import du module pour créer une instance de Vue
-import { createApp } from 'vue/dist/vue.esm-bundler';
+import { createApp } from 'vue/dist/vue.esm-bundler.js';
 // Import du Root-Component
 import App from './App.vue';
 
@@ -24,6 +24,7 @@ import App from './App.vue';
 function goVue() {
         const app = createApp(App)
 
+        // Composant global dispo partout dans l'app
         .component("theHeader", 
                 {
                         template: `
@@ -71,6 +72,7 @@ function goVue() {
 function goRellax() {
         const rellax = new Rellax('.rellax');
 }
+
 
 function init() {
         goVue();
