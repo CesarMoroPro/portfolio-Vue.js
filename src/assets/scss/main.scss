@@ -20,8 +20,12 @@
 @import './pages/home';
 
 //^ Import des fichiers COMPONENTS
-@import './components/skills';
+// Filters
+@import './components/filters/categories';
+@import './components/filters/technos';
+@import './components/filters/tools';
+@import './components/parallax';
 @import './components/projects';
-@import './components/filters';
 @import './components/separators';
+@import './components/skills';
 

@@ -1,6 +1,8 @@
 .main-div {
 
         .projects-div {
+                z-index: 10;  // vis-à-vis de la parallax notamment
+
                 background: $black;
                 background: $gradient-black-dark-green-black;
                 padding: 50px 0 15px;
@@ -15,6 +17,7 @@
                         flex-direction: column;
                         align-items: space-evenly;
                         justify-content: center;
+                        margin: 15px;
 
                         //= Tablette et +
                         @media all and (min-width: ($mobile-max+1)) {
@@ -25,13 +28,13 @@
 
                         .one-project {
                                 position: relative;
-                                margin: 0px 5px 10px;;
+                                margin: 0px 5px 30px;
                                 min-width: ($min-width - 10px);
-                                border: solid 1px $light-green;
+                                border: solid 1px ;
                                 border-radius: 6px;
-                                background: $black;
-                                background: $gradient-dark-green-black-dark-green;
-                                box-shadow: 0px 2px 5px 0px rgba($black, 0.7);
+                                // background: $black;
+                                background: $gradient-black-dark-green-black;
+                                box-shadow: 0px 2px 5px 0px rgba($white, 0.7);
         
                                 display: flex;
                                 flex-direction: column;
@@ -42,10 +45,7 @@
 
                                 .title-and-date {
                                         width: 100%;
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        margin-top: 5px;
+                                        margin: 5px 0 20px;
 
                                         display: flex;
                                         flex-direction: column;
@@ -68,7 +68,13 @@
                                         align-items: center;
 
                                         &__img {
-                                                border-radius: 8px;
+                                                margin-bottom: 20px;
+                                                width: 400px;
+                                                height: 350px;
+
+                                                .thumbnail {
+                                                        border-radius: 8px;
+                                                }
                                         }
 
                                         /*
@@ -87,9 +93,16 @@
                                 }
 
                                 .excerpt-and-github {
-                                        position: absolute;
-                                        bottom: 0;
-                                        margin-bottom: 5px;
+                                        width: 100%;
+                                        margin-bottom: 20px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: flex-start;
+
+                                        &__excerpt {
+                                                margin-bottom: 10px;
+                                        }
                                 }
                         }
                 }

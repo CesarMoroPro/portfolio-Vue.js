@@ -9,7 +9,7 @@
 
                         <div class="title-and-date">
                                 <div class="title-and-date__title">
-                                        <h3>{{ project.title }}</h3>
+                                        <h3>{{ project.title.toLocaleUpperCase() }}</h3>
                                 </div>
                                 <div class="title-and-date__date">
                                         <p>{{ project.date }}</p>
@@ -18,7 +18,7 @@
 
                         <div class="img-and-tags">
                                 <div class="img-and-tags__img">
-                                        <img :src="project.image" />
+                                        <img class="thumbnail" :src="project.image" alt="Vignette du projet concerné"/>
                                 </div>
                                         
                                 <!--* ICI Component des filtres Technos (au sens "langages" du terme) -->
@@ -33,8 +33,8 @@
                         </div>
                                 
                         <div class="excerpt-and-github">
-                                <p>{{ project.excerpt }}</p>
-                                <a :href="project.github">{{ project.github }}</a>
+                                <p class="excertp-and-github__excerpt">{{ project.excerpt }}</p>
+                                <a class="excerpt-and-github__github" :href="project.github">{{ project.github }}</a>
                         </div>
 
                 </div>
@@ -54,9 +54,9 @@ export default {
                 return {
                         projects: [
                                 {
-                                        title: "Wham !",
+                                        title: "Mon Portfolio",
                                         date: "23/03/2023",
-                                        image: "./src/assets/img/github-icon.svg",
+                                        image: "./src/assets/img/minitatures-projets/portfolio-400*350.png",
                                         tags: [
                                                 "HTML", "CSS", "JavaScript", "Vue 3"
                                         ],
@@ -67,7 +67,7 @@ export default {
                                 {
                                         title: "Vivement DeadPool 3 !",
                                         date: "30/04/2023",
-                                        image: "./src/assets/img/vue.svg",
+                                        image: "./src/assets/img/logos/vue.svg",
                                         tags: [
                                                 "HTML", "CSS", "JavaScript", "Vue 3"
                                         ],

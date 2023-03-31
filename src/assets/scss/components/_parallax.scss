@@ -1,0 +1,307 @@
+.all-logos {
+        width: 100%;
+        height: 100%;
+
+        .logos {
+                width: 65px;
+                height: 65px;                     
+        }
+
+        //= Mobile
+        @media all and (max-width: $mobile-max) {
+                .logo {
+
+                        &__html {
+                                position: absolute;
+                                bottom: 15px;
+                                left: 25px;
+                                z-index: 1;
+                        }
+
+                        &__css {
+                                position: absolute;
+                                top: 120px;
+                                right: 15px;
+                        }
+
+                        &__javascript {
+                                position: absolute;
+                                top: 280px;
+                                left: 50px;
+                        }
+
+                        &__node {
+                                position: absolute;
+                                bottom: 80px;
+                                right: 10px;
+                        }
+
+                        &__php {
+                                position: absolute;
+                                top: 35px;
+                                right: 115px;
+                        }
+
+                        &__sass {
+                                position:  absolute;
+                                top: 250px;
+                                right: 35px; 
+                        }
+
+                        &__vue {
+                                position: absolute;
+                                top: 130px;
+                                left: 50px;
+                        }
+                }
+        }
+
+        //= Tablette
+        @media all and (min-width: ($mobile-max+1)) and (max-width: $tablet-max) {
+                .logo {
+
+                        &__html {
+                                position: absolute;
+                                bottom: 15px;
+                                left: 50px;
+                        }
+
+                        &__css {
+                                position: absolute;
+                                top: 220px;
+                                right: 90px;
+                        }
+
+                        &__javascript {
+                                position: absolute;
+                                top: 380px;
+                                left: 115px;
+                        }
+
+                        &__node {
+                                position: absolute;
+                                bottom: 55px;
+                                right: 65px;
+                        }
+
+                        &__php {
+                                position: absolute;
+                                top: 135px;
+                                right: 220px;
+                        }
+
+                        &__sass {
+                                position:  absolute;
+                                top: 350px;
+                                right: 130px; 
+                        }
+
+                        &__vue {
+                                position: absolute;
+                                top: 230px;
+                                left: 180px;
+                        }
+                }
+        }
+
+        //= Bureau
+        @media all and (min-width: ($tablet-max+1)) and (max-width: $desktop-max) {
+                .logo {
+
+                        &__html {
+                                position: absolute;
+                                bottom: 10px;
+                                left: 130px;
+                        }
+
+                        &__css {
+                                position: absolute;
+                                top: 200px;
+                                right: 160px;
+                        }
+
+                        &__javascript {
+                                position: absolute;
+                                top: 380px;
+                                left: 200px;
+                        }
+
+                        &__node {
+                                position: absolute;
+                                bottom: 55px;
+                                right: 165px;
+                        }
+
+                        &__php {
+                                position: absolute;
+                                top: 135px;
+                                right: 295px;
+                        }
+
+                        &__sass {
+                                position:  absolute;
+                                top: 350px;
+                                right: 230px; 
+                        }
+
+                        &__vue {
+                                position: absolute;
+                                top: 230px;
+                                left: 280px;
+                        }
+                }
+        }
+
+        //= Big
+        @media all and (min-width: ($desktop-max+1)) and (max-width: $big-max) {
+                .logo {
+
+                        &__html {
+                                position: absolute;
+                                bottom: 10px;
+                                left: 210px;
+                                z-index: 3;
+                        }
+
+                        &__css {
+                                position: absolute;
+                                top: 200px;
+                                right: 280px;
+                        }
+
+                        &__javascript {
+                                position: absolute;
+                                top: 380px;
+                                left: 330px;
+                                z-index: 2;
+                        }
+
+                        &__node {
+                                position: absolute;
+                                bottom: 55px;
+                                right: 280px;
+                        }
+
+                        &__php {
+                                position: absolute;
+                                top: 135px;
+                                right: 440px;
+                        }
+
+                        &__sass {
+                                position:  absolute;
+                                top: 350px;
+                                right: 350px; 
+                        }
+
+                        &__vue {
+                                position: absolute;
+                                top: 230px;
+                                left: 400px;
+                                z-index: 4;
+                        }
+                }
+        }
+
+        //= Giant
+        @media all and (min-width: ($big-max+1)) and (max-width: $giant-max) {
+                .logo {
+
+                        &__html {
+                                position: absolute;
+                                bottom: 10px;
+                                left: 370px;
+                                z-index: 3;
+                        }
+
+                        &__css {
+                                position: absolute;
+                                top: 200px;
+                                right: 420px;
+                        }
+
+                        &__javascript {
+                                position: absolute;
+                                top: 380px;
+                                left: 490px;
+                                z-index: 2;
+                        }
+
+                        &__node {
+                                position: absolute;
+                                bottom: 55px;
+                                right:450px;
+                        }
+
+                        &__php {
+                                position: absolute;
+                                top: 135px;
+                                right: 650px;
+                        }
+
+                        &__sass {
+                                position:  absolute;
+                                top: 350px;
+                                right: 580px; 
+                        }
+
+                        &__vue {
+                                position: absolute;
+                                top: 230px;
+                                left: 600px;
+                                z-index: 4;
+                        }
+                }
+        }
+
+        //= Giant PLUS
+        @media all and (min-width: ($giant-max+1)) {
+                .logo {
+
+                        &__html {
+                                position: absolute;
+                                bottom: 10px;
+                                left: 500px;
+                                z-index: 3;
+                        }
+
+                        &__css {
+                                position: absolute;
+                                top: 200px;
+                                right: 650px;
+                        }
+
+                        &__javascript {
+                                position: absolute;
+                                top: 380px;
+                                left: 700px;
+                                z-index: 2;
+                        }
+
+                        &__node {
+                                position: absolute;
+                                bottom: 55px;
+                                right: 700px;
+                        }
+
+                        &__php {
+                                position: absolute;
+                                top: 135px;
+                                right: 900px;
+                        }
+
+                        &__sass {
+                                position:  absolute;
+                                top: 350px;
+                                right: 800px; 
+                        }
+
+                        &__vue {
+                                position: absolute;
+                                top: 230px;
+                                left: 850px;
+                                z-index: 4;
+                        }
+                }
+        }
+}

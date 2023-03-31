@@ -1,6 +1,8 @@
 .main-div {
 
         .skills {
+                z-index: 10;  // vis-à-vis de la parallax notamment
+
                 padding: 50px 0 15px;
                 background: $black;
                 background: $gradient-black-dark-green-black;

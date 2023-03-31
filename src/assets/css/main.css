@@ -24,12 +24,6 @@ body h1 {
   text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
 }
 
-.test {
-  background-color: blue;
-  width: 100%;
-  height: 1200px;
-}
-
 .header-main {
   background-color: black;
   min-height: 400px;
@@ -47,246 +41,6 @@ body h1 {
 @media all and (min-width: 651px) {
   .header-main {
     padding-top: 200px;
-  }
-}
-.header-main .all-logos {
-  width: 100%;
-  height: 100%;
-}
-.header-main .all-logos .logos {
-  width: 65px;
-  height: 65px;
-}
-@media all and (max-width: 650px) {
-  .header-main .all-logos .logo__html {
-    position: absolute;
-    bottom: 15px;
-    left: 25px;
-    z-index: 1;
-  }
-  .header-main .all-logos .logo__css {
-    position: absolute;
-    top: 120px;
-    right: 15px;
-  }
-  .header-main .all-logos .logo__javascript {
-    position: absolute;
-    top: 280px;
-    left: 50px;
-  }
-  .header-main .all-logos .logo__node {
-    position: absolute;
-    bottom: 80px;
-    right: 10px;
-  }
-  .header-main .all-logos .logo__php {
-    position: absolute;
-    top: 35px;
-    right: 115px;
-  }
-  .header-main .all-logos .logo__sass {
-    position: absolute;
-    top: 250px;
-    right: 35px;
-  }
-  .header-main .all-logos .logo__vue {
-    position: absolute;
-    top: 130px;
-    left: 50px;
-  }
-}
-@media all and (min-width: 651px) and (max-width: 850px) {
-  .header-main .all-logos .logo__html {
-    position: absolute;
-    bottom: 15px;
-    left: 50px;
-  }
-  .header-main .all-logos .logo__css {
-    position: absolute;
-    top: 220px;
-    right: 90px;
-  }
-  .header-main .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 115px;
-  }
-  .header-main .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 65px;
-  }
-  .header-main .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 220px;
-  }
-  .header-main .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 130px;
-  }
-  .header-main .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 180px;
-  }
-}
-@media all and (min-width: 851px) and (max-width: 1100px) {
-  .header-main .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 130px;
-  }
-  .header-main .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 160px;
-  }
-  .header-main .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 200px;
-  }
-  .header-main .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 165px;
-  }
-  .header-main .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 295px;
-  }
-  .header-main .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 230px;
-  }
-  .header-main .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 280px;
-  }
-}
-@media all and (min-width: 1101px) and (max-width: 1500px) {
-  .header-main .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 210px;
-    z-index: 3;
-  }
-  .header-main .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 280px;
-  }
-  .header-main .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 330px;
-    z-index: 2;
-  }
-  .header-main .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 280px;
-  }
-  .header-main .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 440px;
-  }
-  .header-main .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 350px;
-  }
-  .header-main .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 400px;
-    z-index: 4;
-  }
-}
-@media all and (min-width: 1501px) and (max-width: 2000px) {
-  .header-main .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 370px;
-    z-index: 3;
-  }
-  .header-main .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 420px;
-  }
-  .header-main .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 490px;
-    z-index: 2;
-  }
-  .header-main .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 450px;
-  }
-  .header-main .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 650px;
-  }
-  .header-main .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 580px;
-  }
-  .header-main .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 600px;
-    z-index: 4;
-  }
-}
-@media all and (min-width: 2001px) {
-  .header-main .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 500px;
-    z-index: 3;
-  }
-  .header-main .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 650px;
-  }
-  .header-main .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 700px;
-    z-index: 2;
-  }
-  .header-main .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 700px;
-  }
-  .header-main .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 900px;
-  }
-  .header-main .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 800px;
-  }
-  .header-main .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 850px;
-    z-index: 4;
   }
 }
 .header-main .ID {
@@ -377,11 +131,425 @@ body h1 {
   line-height: 25px;
 }
 
-.test {
-  margin-top: 10px;
+.main-div .projects-categories {
+  margin: 0 10px 40px;
+}
+.main-div .projects-categories ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main-div .projects-categories .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(252, 255, 253, 0.7);
+}
+.main-div .projects-categories .categoryNotSelected {
+  background-color: rgba(0, 255, 0, 0.3);
+  color: #fcfffd;
+  border: solid 1px #fcfffd;
+}
+.main-div .projects-categories .categorySelected {
+  background-color: rgba(0, 255, 0, 0.8);
+  color: #000000;
+  border: solid 1px #00ff00;
+}
+.main-div .projects-categories .categoryHovered {
+  border: solid 1px #fcfffd;
+  text-decoration: underline;
+}
+.main-div .mini-number {
+  font-size: 0.8em;
+}
+
+.main-div .img-and-tags__projects-technos {
+  margin: 15px 10px 10px;
+}
+.main-div .img-and-tags__projects-technos .technos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  line-height: 25px;
+}
+.main-div .img-and-tags__projects-technos .technos-container .techno {
+  white-space: nowrap;
+  border: #fcfffd solid 1px;
+  background-color: rgba(252, 255, 253, 0.75);
+  border-radius: 4px;
+  padding: 0 10px;
+  margin: 5px 5px;
+  list-style-type: none;
+}
+
+.main-div .img-and-tags__projects-tools {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  line-height: 25px;
+}
+.main-div .img-and-tags__projects-tools .tools-container {
+  display: flex;
+  flex-direction: row;
+}
+.main-div .img-and-tags__projects-tools .tools-container .tool {
+  white-space: nowrap;
+  border: #fcfffd solid 1px;
+  background-color: rgba(252, 255, 253, 0.75);
+  border-radius: 4px;
+  padding: 0 10px;
+  margin: 5px 5px;
+  list-style-type: none;
+}
+
+.all-logos {
+  width: 100%;
+  height: 100%;
+}
+.all-logos .logos {
+  width: 65px;
+  height: 65px;
+}
+@media all and (max-width: 650px) {
+  .all-logos .logo__html {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    z-index: 1;
+  }
+  .all-logos .logo__css {
+    position: absolute;
+    top: 120px;
+    right: 15px;
+  }
+  .all-logos .logo__javascript {
+    position: absolute;
+    top: 280px;
+    left: 50px;
+  }
+  .all-logos .logo__node {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+  }
+  .all-logos .logo__php {
+    position: absolute;
+    top: 35px;
+    right: 115px;
+  }
+  .all-logos .logo__sass {
+    position: absolute;
+    top: 250px;
+    right: 35px;
+  }
+  .all-logos .logo__vue {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .all-logos .logo__html {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+  }
+  .all-logos .logo__css {
+    position: absolute;
+    top: 220px;
+    right: 90px;
+  }
+  .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 115px;
+  }
+  .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 65px;
+  }
+  .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 220px;
+  }
+  .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 130px;
+  }
+  .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 180px;
+  }
+}
+@media all and (min-width: 851px) and (max-width: 1100px) {
+  .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+  }
+  .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 160px;
+  }
+  .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 200px;
+  }
+  .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 165px;
+  }
+  .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 295px;
+  }
+  .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 230px;
+  }
+  .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 280px;
+  }
+}
+@media all and (min-width: 1101px) and (max-width: 1500px) {
+  .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 210px;
+    z-index: 3;
+  }
+  .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 280px;
+  }
+  .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 330px;
+    z-index: 2;
+  }
+  .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 280px;
+  }
+  .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 440px;
+  }
+  .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 350px;
+  }
+  .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    z-index: 4;
+  }
+}
+@media all and (min-width: 1501px) and (max-width: 2000px) {
+  .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 370px;
+    z-index: 3;
+  }
+  .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 420px;
+  }
+  .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 490px;
+    z-index: 2;
+  }
+  .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 450px;
+  }
+  .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 650px;
+  }
+  .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 580px;
+  }
+  .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 600px;
+    z-index: 4;
+  }
+}
+@media all and (min-width: 2001px) {
+  .all-logos .logo__html {
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+    z-index: 3;
+  }
+  .all-logos .logo__css {
+    position: absolute;
+    top: 200px;
+    right: 650px;
+  }
+  .all-logos .logo__javascript {
+    position: absolute;
+    top: 380px;
+    left: 700px;
+    z-index: 2;
+  }
+  .all-logos .logo__node {
+    position: absolute;
+    bottom: 55px;
+    right: 700px;
+  }
+  .all-logos .logo__php {
+    position: absolute;
+    top: 135px;
+    right: 900px;
+  }
+  .all-logos .logo__sass {
+    position: absolute;
+    top: 350px;
+    right: 800px;
+  }
+  .all-logos .logo__vue {
+    position: absolute;
+    top: 230px;
+    left: 850px;
+    z-index: 4;
+  }
+}
+
+.main-div .projects-div {
+  z-index: 10;
+  background: #000000;
+  background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
+  padding: 50px 0 15px;
+}
+.main-div .projects-div h2 {
+  text-align: center;
+}
+.main-div .projects-div .all-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: center;
+  margin: 15px;
+}
+@media all and (min-width: 651px) {
+  .main-div .projects-div .all-projects {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.main-div .projects-div .all-projects .one-project {
+  position: relative;
+  margin: 0px 5px 30px;
+  min-width: 390px;
+  border: solid 1px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
+  box-shadow: 0px 2px 5px 0px rgba(252, 255, 253, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.main-div .projects-div .all-projects .one-project .title-and-date {
+  width: 100%;
+  margin: 5px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-div .projects-div .all-projects .one-project .title-and-date__title {
+  color: #00ff00;
+  font-size: 1.2em;
+}
+.main-div .projects-div .all-projects .one-project .title-and-date__date {
+  font-size: 0.7em;
+}
+.main-div .projects-div .all-projects .one-project .img-and-tags {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+  * &__projects-technos {
+  *        Propriétés définies dans le fichier scss > components > _filters.scss
+  }
+  */
+}
+.main-div .projects-div .all-projects .one-project .img-and-tags__img {
+  margin-bottom: 20px;
+  width: 400px;
+  height: 350px;
+}
+.main-div .projects-div .all-projects .one-project .img-and-tags__img .thumbnail {
+  border-radius: 8px;
+}
+@media all and (min-width: 651px) {
+  .main-div .projects-div .all-projects .one-project .img-and-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.main-div .projects-div .all-projects .one-project .excerpt-and-github {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-div .projects-div .all-projects .one-project .excerpt-and-github__excerpt {
+  margin-bottom: 10px;
+}
+
+.horizontal-separator {
+  width: 85%;
+  height: 1px;
+  background-color: #fcfffd;
+  margin: 20px 0;
 }
 
 .main-div .skills {
+  z-index: 10;
   padding: 50px 0 15px;
   background: #000000;
   background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
@@ -410,166 +578,6 @@ body h1 {
   .main-div .skills .right {
     width: 50%;
   }
-}
-
-.main-div .projects-div {
-  background: #000000;
-  background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
-  padding: 50px 0 15px;
-}
-.main-div .projects-div h2 {
-  text-align: center;
-}
-.main-div .projects-div .all-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: space-evenly;
-  justify-content: center;
-}
-@media all and (min-width: 651px) {
-  .main-div .projects-div .all-projects {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-.main-div .projects-div .all-projects .one-project {
-  position: relative;
-  margin: 0px 5px 10px;
-  min-width: 390px;
-  border: solid 1px #00ff00;
-  border-radius: 6px;
-  background: #000000;
-  background: linear-gradient(to bottom, #1e7b1e 15%, #000000 50%, #1e7b1e 85%);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3px;
-}
-.main-div .projects-div .all-projects .one-project .title-and-date {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-div .projects-div .all-projects .one-project .title-and-date__title {
-  color: #00ff00;
-  font-size: 1.2em;
-}
-.main-div .projects-div .all-projects .one-project .title-and-date__date {
-  font-size: 0.7em;
-}
-.main-div .projects-div .all-projects .one-project .img-and-tags {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*
-  * &__projects-technos {
-  *        Propriétés définies dans le fichier scss > components > _filters.scss
-  }
-  */
-}
-.main-div .projects-div .all-projects .one-project .img-and-tags__img {
-  border-radius: 8px;
-}
-@media all and (min-width: 651px) {
-  .main-div .projects-div .all-projects .one-project .img-and-tags {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.main-div .projects-div .all-projects .one-project .excerpt-and-github {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 5px;
-}
-
-.main-div .projects-categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0 10px 20px;
-}
-.main-div .projects-categories .category {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0px 2px 5px 0px rgba(252, 255, 253, 0.7);
-}
-.main-div .projects-categories .categoryNotSelected {
-  background-color: rgba(0, 255, 0, 0.3);
-  color: #fcfffd;
-  border: solid 1px #fcfffd;
-}
-.main-div .projects-categories .categorySelected {
-  background-color: rgba(0, 255, 0, 0.8);
-  color: #000000;
-  border: solid 1px #00ff00;
-}
-.main-div .projects-categories .categoryHovered {
-  border: solid 1px #fcfffd;
-  text-decoration: underline;
-}
-.main-div .img-and-tags__projects-technos {
-  margin: 15px 10px 10px;
-}
-.main-div .img-and-tags__projects-technos .technos-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  line-height: 25px;
-}
-.main-div .img-and-tags__projects-technos .technos-container .techno {
-  border: #fcfffd solid 1px;
-  background-color: rgba(252, 255, 253, 0.75);
-  border-radius: 4px;
-  padding: 0 10px;
-  margin: 5px 5px;
-  list-style-type: none;
-}
-.main-div .img-and-tags__projects-tools {
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  line-height: 25px;
-}
-.main-div .img-and-tags__projects-tools .tools-container {
-  display: flex;
-  flex-direction: row;
-}
-.main-div .img-and-tags__projects-tools .tools-container .tool {
-  border: #fcfffd solid 1px;
-  background-color: rgba(252, 255, 253, 0.75);
-  border-radius: 4px;
-  padding: 0 10px;
-  margin: 5px 5px;
-  list-style-type: none;
-}
-.main-div .mini-number {
-  font-size: 0.8em;
-}
-
-.horizontal-separator {
-  width: 85%;
-  height: 1px;
-  background-color: #fcfffd;
 }
 
 /*# sourceMappingURL=main.css.map */
