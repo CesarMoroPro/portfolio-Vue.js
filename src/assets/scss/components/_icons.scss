@@ -1,9 +1,19 @@
+.pre-header {
+
+        .icons {
+                color: $light-green;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+        }
+}
+
 .main-div {
  
         .excerpt-and-goToTheProject {
 
                 &__goToTheProject {
-                        color: $light-green;
+                        color: $light-green; /* This property just define the links underline color, not the links color !! */
 
                         .icon-github-mini, .icon-youtube-mini {
                                 width: 25px;

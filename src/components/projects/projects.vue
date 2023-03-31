@@ -34,6 +34,7 @@
                                 
                         <div class="excerpt-and-goToTheProject">
                                 <p class="excertp-and-goToTheProject__excerpt">{{ project.excerpt }}</p>
+                                
                                 <a 
                                 class="excerpt-and-goToTheProject__goToTheProject" 
                                 :href="project.link"

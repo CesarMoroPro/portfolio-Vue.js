@@ -1,17 +1,18 @@
 <!--= ---------- TEMPLATE ---------- -->
 <template>
     <header>
+      <thePreHeader></thePreHeader>
       <theHeader></theHeader>
     </header>
 
     <main class="main-div">
       <div class="skills">
-        <hardskillsComponent></hardskillsComponent>
-        <softskillsComponent></softskillsComponent>
+        <theHardskillsComponent></theHardskillsComponent>
+        <theSoftskillsComponent></theSoftskillsComponent>
       </div>
       
       <div class="projects-div">
-        <projectsComponent></projectsComponent>
+        <theProjectsComponent></theProjectsComponent>
       </div>
     </main>
 </template>
@@ -27,9 +28,9 @@ import Projects from "./components/projects/projects.vue";
 
 export default {
   components: {
-    hardskillsComponent: Hardskills,
-    softskillsComponent: Softskills,
-    projectsComponent: Projects,
+    theHardskillsComponent: Hardskills,
+    theSoftskillsComponent: Softskills,
+    theProjectsComponent: Projects,
   }
 }
 

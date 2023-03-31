@@ -109,6 +109,7 @@
                                                 .icon-and-goToTheProject {
                                                         display: flex;
                                                         flex-direction: row;
+                                                        color: $light-green; /* icons and links colored but not the links underline (in 'component > _icons.scss' */
                                                 }
 
                                                 .icon-github-mini, .icon-youtube-mini {
