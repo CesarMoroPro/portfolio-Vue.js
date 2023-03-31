@@ -10,6 +10,10 @@
     "sw": "sass --watch ./src/assets/scss:./src/assets/css"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "rellax": "^1.12.1",
     "reset.css": "^2.0.2",
     "sass": "^1.60.0",

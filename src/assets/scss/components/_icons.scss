@@ -1,0 +1,14 @@
+.main-div {
+ 
+        .excerpt-and-github {
+
+                &__github {
+                        color: $light-green;
+
+                        .icon-github-mini {
+                                width: 25px;
+                                height: 25px;
+                        }
+                }
+        }
+}

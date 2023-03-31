@@ -34,7 +34,13 @@
                                 
                         <div class="excerpt-and-github">
                                 <p class="excertp-and-github__excerpt">{{ project.excerpt }}</p>
-                                <a class="excerpt-and-github__github" :href="project.github">{{ project.github }}</a>
+                                <a 
+                                class="excerpt-and-github__github" 
+                                :href="project.github"
+                                >
+                                <font-awesome-icon icon="fa-brands fa-github" class="icon icon-github-mini" />
+                                {{ project.github }}
+                                </a>
                         </div>
 
                 </div>

@@ -8,9 +8,19 @@
 
 //= ---------------------------------------------------------------------------------------------------------
 //^ 1. IMPORTS NÉCESSAIRES
-// (Reset.css est importé dans le fichier "sccs/main.scss" !)
-// Import du package Parallax.js, qui est appelé après l'instance de Vue
+//* (Reset.css est importé dans le fichier "sccs/main.scss" !)
+//* Import du package Parallax.js, qui est appelé après l'instance de Vue
 import '../node_modules/rellax/rellax.min.js';
+
+//* Import de FontAwesome pour Vue 3 !
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+/* import specific icons */
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+/* add icons to the library */
+library.add(faGithub)
 
 // Import du module pour créer une instance de Vue
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
@@ -24,7 +34,8 @@ import App from './App.vue';
 function goVue() {
         const app = createApp(App)
 
-        // Composant global dispo partout dans l'app
+        // Composants globauxl dispo partout dans l'app
+        .component('font-awesome-icon', FontAwesomeIcon)
         .component("theHeader", 
                 {
                         template: `
