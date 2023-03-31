@@ -92,7 +92,7 @@
                                         }
                                 }
 
-                                .excerpt-and-github {
+                                .excerpt-and-goToTheProject {
                                         width: 95%;
                                         margin: 15px 30px 10px;
                                         display: flex;
@@ -104,15 +104,18 @@
                                                 /* Nothing special for now */
                                         }
 
-                                        &__github {
-                                                display: flex;
-                                                flex-direction: row;
+                                        &__goToTheProject {
+                                                
+                                                .icon-and-goToTheProject {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                }
 
-                                                .icon-github-mini {
+                                                .icon-github-mini, .icon-youtube-mini {
                                                         /* CSS is defined in the Scss file 'components > _icons.scss' */
                                                 }
 
-                                                .link-github {
+                                                .link {
                                                         color: $light-green;
                                                         margin-left: 5px;
                                                         font-size: 0.85em;

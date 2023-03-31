@@ -210,10 +210,10 @@ body h1 {
   list-style-type: none;
 }
 
-.main-div .excerpt-and-github__github {
+.main-div .excerpt-and-goToTheProject__goToTheProject {
   color: #00ff00;
 }
-.main-div .excerpt-and-github__github .icon-github-mini {
+.main-div .excerpt-and-goToTheProject__goToTheProject .icon-github-mini, .main-div .excerpt-and-goToTheProject__goToTheProject .icon-youtube-mini {
   width: 25px;
   height: 25px;
 }
@@ -537,7 +537,7 @@ body h1 {
     justify-content: space-between;
   }
 }
-.main-div .projects-div .all-projects .one-project .excerpt-and-github {
+.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject {
   width: 95%;
   margin: 15px 30px 10px;
   display: flex;
@@ -545,17 +545,17 @@ body h1 {
   justify-content: center;
   align-items: flex-start;
 }
-.main-div .projects-div .all-projects .one-project .excerpt-and-github__excerpt {
+.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__excerpt {
   /* Nothing special for now */
 }
-.main-div .projects-div .all-projects .one-project .excerpt-and-github__github {
+.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .icon-and-goToTheProject {
   display: flex;
   flex-direction: row;
 }
-.main-div .projects-div .all-projects .one-project .excerpt-and-github__github .icon-github-mini {
+.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .icon-github-mini, .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .icon-youtube-mini {
   /* CSS is defined in the Scss file 'components > _icons.scss' */
 }
-.main-div .projects-div .all-projects .one-project .excerpt-and-github__github .link-github {
+.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .link {
   color: #00ff00;
   margin-left: 5px;
   font-size: 0.85em;

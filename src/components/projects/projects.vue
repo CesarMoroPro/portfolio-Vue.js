@@ -32,14 +32,26 @@
                                 <horizontalSeparatorComponent></horizontalSeparatorComponent>
                         </div>
                                 
-                        <div class="excerpt-and-github">
-                                <p class="excertp-and-github__excerpt">{{ project.excerpt }}</p>
+                        <div class="excerpt-and-goToTheProject">
+                                <p class="excertp-and-goToTheProject__excerpt">{{ project.excerpt }}</p>
                                 <a 
-                                class="excerpt-and-github__github" 
-                                :href="project.github"
+                                class="excerpt-and-goToTheProject__goToTheProject" 
+                                :href="project.link"
                                 >
-                                <font-awesome-icon icon="fa-brands fa-github" shake class="icon icon-github-mini" />
-                                <p class="link-github">{{ project.github }}</p>
+                                        <div 
+                                        class="icon-and-goToTheProject" 
+                                        v-if="project.githubIcon"
+                                        >
+                                                <font-awesome-icon class="icon icon-github-mini" icon="fa-brands fa-github" shake />
+                                                <p class="link">{{ project.link }}</p>
+                                        </div>
+
+                                        <div class="icon-and-goToTheProject"
+                                        v-else-if="project.youtubeIcon"
+                                        >
+                                                <font-awesome-icon class="icon icon-github-mini" icon="fa-brands fa-youtube" fade />
+                                                <p class="link">{{ project.link }}</p>
+                                        </div>
                                 </a>
                         </div>
 
@@ -67,7 +79,10 @@ export default {
                                                 "HTML", "CSS", "JavaScript", "Vue 3"
                                         ],
                                         excerpt: "Ceci est le résumé du projet statique",
-                                        github: "lien vers le repo GitHub",
+                                        link: "lien vers le repo GitHub",
+                                        githubIcon: true,
+                                        youtubeIcon: true,
+
                                 },
 
                                 {
@@ -78,7 +93,9 @@ export default {
                                                 "HTML", "CSS", "JavaScript", "Vue 3"
                                         ],
                                         excerpt: "Un autre résumé",
-                                        github: "lien vers le repo GitHub",
+                                        link: "lien vers la vidéo Youtube",
+                                        githubIcon: false,
+                                        youtubeIcon: true,
                                 }
                         ]
                 }

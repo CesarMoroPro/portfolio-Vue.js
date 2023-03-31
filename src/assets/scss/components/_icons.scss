@@ -1,11 +1,11 @@
 .main-div {
  
-        .excerpt-and-github {
+        .excerpt-and-goToTheProject {
 
-                &__github {
+                &__goToTheProject {
                         color: $light-green;
 
-                        .icon-github-mini {
+                        .icon-github-mini, .icon-youtube-mini {
                                 width: 25px;
                                 height: 25px;
                         }
