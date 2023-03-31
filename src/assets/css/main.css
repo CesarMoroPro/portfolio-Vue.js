@@ -545,6 +545,22 @@ body h1 {
   justify-content: center;
   align-items: flex-start;
 }
+.main-div .projects-div .all-projects .one-project .excerpt-and-github__excerpt {
+  /* Nothing special for now */
+}
+.main-div .projects-div .all-projects .one-project .excerpt-and-github__github {
+  display: flex;
+  flex-direction: row;
+}
+.main-div .projects-div .all-projects .one-project .excerpt-and-github__github .icon-github-mini {
+  /* CSS is defined in the Scss file 'components > _icons.scss' */
+}
+.main-div .projects-div .all-projects .one-project .excerpt-and-github__github .link-github {
+  color: #00ff00;
+  margin-left: 5px;
+  font-size: 0.85em;
+}
+
 .horizontal-separator {
   width: 85%;
   height: 1px;

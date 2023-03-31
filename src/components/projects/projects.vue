@@ -38,8 +38,8 @@
                                 class="excerpt-and-github__github" 
                                 :href="project.github"
                                 >
-                                <font-awesome-icon icon="fa-brands fa-github" class="icon icon-github-mini" />
-                                {{ project.github }}
+                                <font-awesome-icon icon="fa-brands fa-github" shake class="icon icon-github-mini" />
+                                <p class="link-github">{{ project.github }}</p>
                                 </a>
                         </div>
 

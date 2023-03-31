@@ -101,7 +101,22 @@
                                         align-items: flex-start;
 
                                         &__excerpt {
-                                                
+                                                /* Nothing special for now */
+                                        }
+
+                                        &__github {
+                                                display: flex;
+                                                flex-direction: row;
+
+                                                .icon-github-mini {
+                                                        /* CSS is defined in the Scss file 'components > _icons.scss' */
+                                                }
+
+                                                .link-github {
+                                                        color: $light-green;
+                                                        margin-left: 5px;
+                                                        font-size: 0.85em;
+                                                }
                                         }
                                 }
                         }
