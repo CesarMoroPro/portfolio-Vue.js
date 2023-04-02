@@ -1,14 +1,5 @@
 <template>
-        <div class="img-and-tags__projects-technos">
-                <ul class="technos-container">
-                        <li
-                        class="techno"
-                        v-for="(element, index) in technos" :key="index"
-                        >
-                                {{ element.name }}
-                        </li>
-                </ul>
-        </div>
+
 </template>
 
 
@@ -16,7 +7,7 @@
 export default {
         data() {
                 return {
-                        technos: [
+                        technosTags: [
                                 {
                                         name: "HTML",
                                         isSelected: true,
@@ -62,5 +53,12 @@ export default {
                         ],
                 }
         },
-}
+
+        // props: {
+        //         technoNameProp: {
+        //                 type: String,
+        //                 required: true,
+        //         },
+        // }
+};
 </script>

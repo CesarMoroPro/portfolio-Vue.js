@@ -5,7 +5,9 @@
                         class="category"
                         v-for="(element, index) in categories" :key="index"
                         :class="[ element.isSelected ? 'categorySelected' : 'categoryNotSelected', element.isHovered ? 'categoryHovered' : 'categoryNotHovered' ]"
-                        @click="categoryIsSelected(element)" @mouseover="mouseIn(element)" @mouseout="mouseOut(element)"
+                        @click="categoryIsSelected(element)" 
+                        @mouseover="mouseIn(element)" 
+                        @mouseout="mouseOut(element)"
                         >
                                 {{ element.name }} <span class="mini-number"> &nbsp;({{ element.total }})</span>
                         </li>

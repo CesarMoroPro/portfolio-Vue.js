@@ -1,23 +1,4 @@
 <template>
-        <!--
-        /*
-        Avec le premier "v-for", à chaque itération, "element" devient un objet contenant une propriété "store" et une propriété "name"
-        Il faut alors ensuite un deuxième "v-for" pour boucler sur toutes les propriétés "name" puisqu'elles contiennent toutes un tableau
-        pour enfin avoir accès à tout leur contenu
-        */
-        -->
-        <div class="img-and-tags__projects-tools">
-                <ul class="tools-container"
-                v-for="(element, index) in tools" :key="index"
-                >
-                        <li
-                        class="tool"
-                        v-for="(el) in element.name"
-                        >
-                                {{ el }}
-                        </li>
-                </ul>
-        </div>
 
 </template>
 
@@ -70,5 +51,5 @@ export default {
                         ]
                 }
         },
-}
+};
 </script>
