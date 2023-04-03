@@ -43,6 +43,10 @@
         
                                 padding: 3px;
 
+                                .link-project-card {
+                                        text-decoration: none;
+                                }
+
                                 .title-and-date {
                                         width: 100%;
                                         margin: 5px 0 20px;
@@ -66,6 +70,7 @@
                                         display: flex;
                                         flex-direction: column;
                                         align-items: center;
+                                        color: $black;
 
                                         &__img {
                                                 margin-bottom: 20px;
@@ -100,9 +105,11 @@
                                         justify-content: center;
                                         align-items: flex-start;
 
+                                        /*
                                         &__excerpt {
-                                                /* Nothing special for now */
+                                                Nothing special for now
                                         }
+                                        */
 
                                         &__goToTheProject {
                                                 
@@ -112,9 +119,11 @@
                                                         color: $light-green; /* icons and links colored but not the links underline (in 'component > _icons.scss' */
                                                 }
 
+                                                /*
                                                 .icon-github-mini, .icon-youtube-mini {
-                                                        /* CSS is defined in the Scss file 'components > _icons.scss' */
+                                                         CSS is defined in the Scss file 'components > _icons.scss'
                                                 }
+                                                */
 
                                                 .link {
                                                         color: $light-green;

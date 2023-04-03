@@ -154,7 +154,7 @@ body h1 {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.main-div .projects-categories .category {
+.main-div .projects-categories ul .category {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -165,22 +165,30 @@ body h1 {
   cursor: pointer;
   box-shadow: 0px 2px 5px 0px rgba(252, 255, 253, 0.7);
 }
-.main-div .projects-categories .categoryNotSelected {
+.main-div .projects-categories ul .category .mini-number {
+  font-size: 0.8em;
+}
+.main-div .projects-categories ul .categoryNotSelected {
   background-color: rgba(0, 255, 0, 0.3);
   color: #fcfffd;
   border: solid 1px #fcfffd;
 }
-.main-div .projects-categories .categorySelected {
+.main-div .projects-categories ul .categorySelected {
   background-color: rgba(0, 255, 0, 0.8);
   color: #000000;
   border: solid 1px #00ff00;
 }
-.main-div .projects-categories .categoryHovered {
+.main-div .projects-categories ul .categoryHovered {
   border: solid 1px #fcfffd;
   text-decoration: underline;
 }
-.main-div .mini-number {
-  font-size: 0.8em;
+.main-div .info {
+  display: block;
+  width: 100%;
+  color: #fcfffd;
+  font-size: 0.6em;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .main-div .img-and-tags__projects-technos {
@@ -214,6 +222,8 @@ body h1 {
 .main-div .img-and-tags__projects-tools .tools-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .main-div .img-and-tags__projects-tools .tools-container .tool {
   white-space: nowrap;
@@ -518,6 +528,9 @@ body h1 {
   justify-content: center;
   padding: 3px;
 }
+.main-div .projects-div .all-projects .one-project .link-project-card {
+  text-decoration: none;
+}
 .main-div .projects-div .all-projects .one-project .title-and-date {
   width: 100%;
   margin: 5px 0 20px;
@@ -537,6 +550,7 @@ body h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #000000;
   /*
   * &__projects-technos {
   *        Propriétés définies dans le fichier scss > components > _filters.scss
@@ -566,17 +580,23 @@ body h1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  /*
+  &__excerpt {
+          Nothing special for now
+  }
+  */
 }
-.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__excerpt {
-  /* Nothing special for now */
+.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject {
+  /*
+  .icon-github-mini, .icon-youtube-mini {
+           CSS is defined in the Scss file 'components > _icons.scss'
+  }
+  */
 }
 .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .icon-and-goToTheProject {
   display: flex;
   flex-direction: row;
   color: #00ff00; /* icons and links colored but not the links underline (in 'component > _icons.scss' */
-}
-.main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .icon-github-mini, .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .icon-youtube-mini {
-  /* CSS is defined in the Scss file 'components > _icons.scss' */
 }
 .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject .link {
   color: #00ff00;

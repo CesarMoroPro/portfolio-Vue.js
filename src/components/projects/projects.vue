@@ -2,10 +2,22 @@
 <h2>Mes réalisations</h2>
 
 <!--* ICI Component des filtres Catégories (Front, Back, Full) -->
-<categoriesComponent></categoriesComponent>
+<!--J'envoie le tableau projectsList dans le SFC categories.vue, via la props projectsListProp-->
+<!--Puis, après le traitement dans le SFC qui me crée un custom event $emit, je récupère les données ici via @customEvent, qui déclenche une méthode-->
+<categoriesComponent
+:projectsListProp="projectsList"
+@filterByCategoryProcess="filtrage($event)"
 
-<div class="all-projects">
-        <div class="one-project" v-for="(project, index) in projectsList" :key="index">
+>
+
+</categoriesComponent>
+
+<div class="all-projects" v-for="(project, index) in projectsList" :key="index">
+        <div 
+        class="one-project"
+        
+        >
+                <a class="link-project-card" href="http://cesarmorowebdevelopment.com">
 
                 <!--= TITRE + DATE -->
                 <div class="title-and-date">
@@ -78,12 +90,14 @@
                         </a>
                 </div>
 
+                </a>
         </div>
 </div>
 </template>
 
 
 <script>
+
 import Categories from "../filters/categories.vue";
 import HorizontalSeparator from "../visuals/horizontal-separator.vue";
 
@@ -142,10 +156,11 @@ export default {
                                                         name: [],
                                                 },
                                         ],
-                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement",
+                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement !",
                                         link: "lien vers le repo GitHub",
                                         githubIcon: true,
                                         youtubeIcon: true,
+                                        finition: "front-end",
 
                                 },
 
@@ -203,8 +218,21 @@ export default {
                                         link: "lien vers la vidéo Youtube",
                                         githubIcon: false,
                                         youtubeIcon: true,
+                                        finition: "fullstack",
                                 }
-                        ]
+                        ],
+                        filterName: null,
+                }
+        },
+
+        methods: {
+                filtrage(event) {
+                        /* Le fait d'entrer dans cette méthode implique forcément que la condition (project.finition === category.name) soit déjà vraie, dans le SFC categories.vue
+                        Il n'y a donc pas besoin de refaire un traitement de vérification
+                        Il faut simplement renvoyer l'argument event */
+                        this.filterName = event;
+                        console.log(this.filterName);
+                        // return this.filterName;
                 }
         },
 
