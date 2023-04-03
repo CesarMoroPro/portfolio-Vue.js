@@ -35,39 +35,41 @@
                                 <img class="thumbnail" :src="project.image" alt="Vignette du projet concerné"/>
                         </div>
                                 
-                        <div class="img-and-tags__projects-technos">
-                                <ul class="technos-container">
-                                        <li
-                                        class="techno"
-                                        v-for="techno in project.technos"
+                        <div class="img-and-tags__tags">
+                                <div class="img-and-tags__tags__technos">
+                                        <ul class="technos-container">
+                                                <li
+                                                class="techno"
+                                                v-for="techno in project.technos"
+                                                >
+                                                        {{ techno }}
+                                                </li>
+                                        </ul>
+                                </div>
+
+                                <horizontalSeparatorComponent></horizontalSeparatorComponent>
+
+                                <div class="img-and-tags__tags__tools">
+                                        <ul 
+                                        class="tools-container"
+                                        v-for="(tool, index) in project.tools" :key="index"
                                         >
-                                                {{ techno }}
-                                        </li>
-                                </ul>
+                                                <li
+                                                class="tool"
+                                                v-for="nameTool in tool.name"
+                                                >
+                                                        {{ nameTool }}
+                                                </li>
+                                        </ul>
+                                </div>
+
+                                <horizontalSeparatorComponent></horizontalSeparatorComponent>
                         </div>
-
-                        <horizontalSeparatorComponent></horizontalSeparatorComponent>
-
-                        <div class="img-and-tags__projects-tools">
-                                <ul 
-                                class="tools-container"
-                                v-for="(tool, index) in project.tools" :key="index"
-                                >
-                                        <li
-                                        class="tool"
-                                        v-for="nameTool in tool.name"
-                                        >
-                                                {{ nameTool }}
-                                        </li>
-                                </ul>
-                        </div>
-
-                        <horizontalSeparatorComponent></horizontalSeparatorComponent>
                 </div>
                         
                 <!--= EXCERPT + ICONE + LIEN -->
                 <div class="excerpt-and-goToTheProject">
-                        <p class="excertp-and-goToTheProject__excerpt">{{ project.excerpt }}</p>
+                        <p class="excerpt-and-goToTheProject__excerpt">{{ project.excerpt }}</p>
                         
                         <a 
                         class="excerpt-and-goToTheProject__goToTheProject" 

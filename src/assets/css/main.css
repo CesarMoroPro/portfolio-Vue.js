@@ -46,17 +46,8 @@ body h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
   position: relative;
-}
-@media all and (max-width: 650px) {
-  .header-main {
-    padding-top: 100px;
-  }
-}
-@media all and (min-width: 651px) {
-  .header-main {
-    padding-top: 200px;
-  }
 }
 .header-main .ID {
   display: flex;
@@ -135,6 +126,11 @@ body h1 {
   background-color: red;
   animation: k2000Laser 2s linear;
 }
+@media all and (min-width: 651px) {
+  .header-main {
+    padding-top: 200px;
+  }
+}
 
 .main-div h2 {
   margin-bottom: 30px;
@@ -191,17 +187,18 @@ body h1 {
   margin-top: 10px;
 }
 
-.main-div .img-and-tags__projects-technos {
+.main-div .img-and-tags__tags__technos {
+  width: 100%;
   margin: 15px 30px 10px;
 }
-.main-div .img-and-tags__projects-technos .technos-container {
+.main-div .img-and-tags__tags__technos .technos-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
   line-height: 25px;
 }
-.main-div .img-and-tags__projects-technos .technos-container .techno {
+.main-div .img-and-tags__tags__technos .technos-container .techno {
   white-space: nowrap;
   border: #fcfffd solid 1px;
   background-color: rgba(252, 255, 253, 0.75);
@@ -211,7 +208,8 @@ body h1 {
   list-style-type: none;
 }
 
-.main-div .img-and-tags__projects-tools {
+.main-div .img-and-tags__tags__tools {
+  width: 100%;
   margin: 15px 30px 10px;
   display: flex;
   flex-direction: row;
@@ -219,13 +217,13 @@ body h1 {
   justify-content: space-evenly;
   line-height: 25px;
 }
-.main-div .img-and-tags__projects-tools .tools-container {
+.main-div .img-and-tags__tags__tools .tools-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.main-div .img-and-tags__projects-tools .tools-container .tool {
+.main-div .img-and-tags__tags__tools .tools-container .tool {
   white-space: nowrap;
   border: #fcfffd solid 1px;
   background-color: rgba(252, 255, 253, 0.75);
@@ -507,13 +505,6 @@ body h1 {
   justify-content: center;
   margin: 15px;
 }
-@media all and (min-width: 651px) {
-  .main-div .projects-div .all-projects {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
 .main-div .projects-div .all-projects .one-project {
   position: relative;
   margin: 0px 5px 30px;
@@ -552,26 +543,22 @@ body h1 {
   align-items: center;
   color: #000000;
   /*
-  * &__projects-technos {
-  *        Propriétés définies dans le fichier scss > components > _filters.scss
+  &__tags {
+
+          &__technos + &__tools {
+          *        Propriétés définies dans le fichier scss > components > _filters.scss
+          }
+
   }
   */
 }
 .main-div .projects-div .all-projects .one-project .img-and-tags__img {
   margin-bottom: 20px;
-  width: 400px;
-  height: 350px;
 }
 .main-div .projects-div .all-projects .one-project .img-and-tags__img .thumbnail {
   border-radius: 8px;
-}
-@media all and (min-width: 651px) {
-  .main-div .projects-div .all-projects .one-project .img-and-tags {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  width: 400px;
+  height: 350px;
 }
 .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject {
   width: 95%;
@@ -588,8 +575,8 @@ body h1 {
 }
 .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject__goToTheProject {
   /*
-  .icon-github-mini, .icon-youtube-mini {
-           CSS is defined in the Scss file 'components > _icons.scss'
+  * .icon-github-mini, .icon-youtube-mini {
+  *         CSS is defined in the Scss file 'components > _icons.scss'
   }
   */
 }
@@ -602,6 +589,38 @@ body h1 {
   color: #00ff00;
   margin-left: 5px;
   font-size: 0.85em;
+}
+@media all and (min-width: 851px) {
+  .main-div .projects-div .all-projects {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main-div .projects-div .all-projects .one-project {
+    width: 80%;
+  }
+  .main-div .projects-div .all-projects .one-project .img-and-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-div .projects-div .all-projects .one-project .img-and-tags__img .thumbnail {
+    border-radius: 8px;
+    width: 400px;
+    height: 350px;
+  }
+  .main-div .projects-div .all-projects .one-project .img-and-tags__tags {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* &__technos + &__tools {
+    *        Propriétés définies dans le fichier scss > components > _filters.scss
+    }
+    */
+  }
 }
 
 .horizontal-separator {

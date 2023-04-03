@@ -2,26 +2,31 @@
 
         .img-and-tags {
 
-                &__projects-technos {
-                        margin: 15px 30px 10px;                        
+                &__tags {
 
-                        .technos-container {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
-                                flex-wrap: wrap;
-                                line-height: 25px;
-                                
-                                .techno {
-                                        white-space: nowrap;
-                                        border: $white solid 1px;
-                                        background-color: rgba($white, 0.75);
-                                        border-radius: 4px;
-                                        padding: 0 10px;
-                                        margin: 5px 5px;
-                                        list-style-type: none;
+                        &__technos {
+                                width: 100%;
+                                margin: 15px 30px 10px;                        
+
+                                .technos-container {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-evenly;
+                                        flex-wrap: wrap;
+                                        line-height: 25px;
+                                        
+                                        .techno {
+                                                white-space: nowrap;
+                                                border: $white solid 1px;
+                                                background-color: rgba($white, 0.75);
+                                                border-radius: 4px;
+                                                padding: 0 10px;
+                                                margin: 5px 5px;
+                                                list-style-type: none;
+                                        }
                                 }
                         }
+                        
                 }
         }
 }

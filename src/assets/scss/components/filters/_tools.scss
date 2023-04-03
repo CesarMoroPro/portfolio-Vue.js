@@ -2,30 +2,34 @@
 
         .img-and-tags {
 
-                &__projects-tools {
-                        margin: 15px 30px 10px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        line-height: 25px;
+                &__tags {
 
-                        .tools-container {
+                        &__tools {
+                                width: 100%;
+                                margin: 15px 30px 10px;
                                 display: flex;
                                 flex-direction: row;
                                 flex-wrap: wrap;
-                                justify-content: center;
+                                justify-content: space-evenly;
+                                line-height: 25px;
 
-                                .tool {
-                                        white-space: nowrap;
-                                        border: $white solid 1px;
-                                        background-color: rgba($white, 0.75);
-                                        border-radius: 4px;
-                                        padding: 0 10px;
-                                        margin: 5px 5px;
-                                        list-style-type: none;
+                                .tools-container {
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+
+                                        .tool {
+                                                white-space: nowrap;
+                                                border: $white solid 1px;
+                                                background-color: rgba($white, 0.75);
+                                                border-radius: 4px;
+                                                padding: 0 10px;
+                                                margin: 5px 5px;
+                                                list-style-type: none;
+                                        }
                                 }
-                        }
+                        } 
                 }
         }
 }

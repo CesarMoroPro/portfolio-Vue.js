@@ -1,5 +1,6 @@
 .header-main {
 
+        //= Mobile et Tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         background-color: black;
         min-height: 400px;
         
@@ -7,16 +8,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 100px;
 
         position: relative;
-
-        @media all and (max-width: $mobile-max) {
-                padding-top: 100px;
-        }
-
-        @media all and (min-width: ($mobile-max+1)) {
-                padding-top: 200px;
-        }
 
         .ID {
                 display: flex;
@@ -108,4 +102,10 @@
                         animation: k2000Laser 2s linear;
                 }
         }
+
+        //= Tablet et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($mobile-max+1)) {
+                padding-top: 200px;
+        }
+
 }

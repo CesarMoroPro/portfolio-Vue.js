@@ -1,5 +1,6 @@
 .main-div {
 
+        //= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         .skills {
                 z-index: 10;  // vis-à-vis de la parallax notamment
 
@@ -20,8 +21,11 @@
                         margin: 5px;
                         margin-bottom: 30px;
                 }
-        
-                //= Tablette et +
+        }
+
+        //= Destkop et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        .skills {
+
                 @media all and (min-width: ($mobile-max+1)) {
         
                         flex-direction: row;
