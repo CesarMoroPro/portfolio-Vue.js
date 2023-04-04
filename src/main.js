@@ -120,7 +120,7 @@ function init() {
         goVue();
         goRellax();
         letsGetCurrentYear();
-        initHeightProjectCard();
+        //initHeightProjectCard();
 
         // const el = document.querySelector('.one-project');
         // console.log(el.offsetWidth);
