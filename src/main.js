@@ -18,9 +18,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faGithub, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faYoutube  } from '@fortawesome/free-brands-svg-icons';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
-library.add(faGithub, faYoutube, faLinkedin)
+library.add(faGithub, faLinkedin, faAddressCard, faYoutube);
 
 // Import du module pour créer une instance de Vue
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
@@ -46,6 +47,7 @@ function goVue() {
                                 <div class="pre-header">
                                         <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="#" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
                                         <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="#" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
+                                        <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" />
                                 </div>
                         `
                 }
@@ -96,6 +98,12 @@ function goVue() {
                                 César MORO - Web Development <br>
                                 Développeur Front-end JavaScript - Vue.js <br>
                                 Copyright <span id="copy-year">Année injectée en JS Vanilla</span>
+                        </div>
+
+                        <div class="post-footer">
+                                <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="#" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
+                                <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="#" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
+                                <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" bounce />
                         </div>
                 `
         })

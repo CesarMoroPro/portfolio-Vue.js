@@ -1,5 +1,5 @@
 //= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-.pre-header {
+.pre-header, .post-footer {
 
         .icons {
                 color: $light-green;
@@ -26,7 +26,7 @@
 
 //= Destkop - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @media all and (min-width: ($tablet-max+1)) {
-        .pre-header {
+        .pre-header, .post-footer {
 
                 .icons {
                         width: 50px;
@@ -37,7 +37,7 @@
 
 //= Destkop - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @media all and (min-width: ($tablet-max+1)) {
-        .pre-header {
+        .pre-header, .post-footer {
 
                 .icons {
                         width: 60px;
