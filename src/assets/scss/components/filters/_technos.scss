@@ -51,4 +51,17 @@
                         }
                 }
         }
+
+        //= Au-dessus de Giant  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($giant-max+1)){
+                .img-and-tags {
+
+                        &__tags {
+
+                                &__technos {
+                                        width: 100%;
+                                }
+                        }
+                } 
+        }
 }

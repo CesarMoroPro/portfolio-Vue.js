@@ -221,7 +221,64 @@ export default {
                                         githubIcon: false,
                                         youtubeIcon: true,
                                         finition: "fullstack",
-                                }
+                                },
+
+                                /* Deadpool 3 */
+                                {
+                                        title: "Vivement DeadPool 3 !",
+                                        date: "30/04/2023",
+                                        image: "./src/assets/img/logos/vue.svg",
+                                        technos: [
+                                                "HTML", "CSS", "JavaScript",
+                                        ],
+                                        tools: [
+                                                {
+                                                        store: "preprocessors",
+                                                        name: [ "Sass" ],
+                                                },
+                                                {
+                                                        store: "frameworks",
+                                                        name: [ "Vue.js 3" ],
+                                                },
+                                                {
+                                                        store: "builders",
+                                                        name: [ "Vite" ],
+                                                },
+                                                {
+                                                        store: "libraries",
+                                                        name: [ "Rellax.js"],
+                                                },
+                                                {
+                                                        store: "cmss",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "sgbds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "bdds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "managers",
+                                                        name: [ "NPM"],
+                                                },
+                                                {
+                                                        store: "versionnings",
+                                                        name: [ "Git", "GitHub" ],
+                                                },
+                                                {
+                                                        store: "others",
+                                                        name: [],
+                                                },
+                                        ],
+                                        excerpt: "Un autre résumé",
+                                        link: "lien vers la vidéo Youtube",
+                                        githubIcon: false,
+                                        youtubeIcon: true,
+                                        finition: "fullstack",
+                                },
                         ],
                         filterName: null,
                 }

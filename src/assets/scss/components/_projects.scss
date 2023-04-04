@@ -130,7 +130,7 @@
                 }
         }
 
-        //= Destkop et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        //= Destkop - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         @media all and (min-width: ($tablet-max+1)) {
                 .projects-div {
 
@@ -150,15 +150,6 @@
                                                 flex-direction: row;
                                                 justify-content: space-between;
 
-                                                &__img {
-
-                                                        .thumbnail {
-                                                                border-radius: 8px;
-                                                                width: 400px;
-                                                                height: 350px;  
-                                                        }
-                                                }
-
                                                 &__tags {
                                                         width: 50%;
                                                         display: flex;
@@ -176,38 +167,84 @@
                 }
         }
 
-        //= Destkop et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        //= Big  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         @media all and (min-width: ($desktop-max+1)){
                 .projects-div {
 
                         .all-projects {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
                                 align-items: flex-start;
-                                flex-wrap: wrap;
 
                                 .one-project {
-                                        width: 40%;
+                                        width: 45%;
 
                                         .img-and-tags {
                                                 flex-direction: column;
 
-                                                &__img {
-        
-                                                        .thumbnail {
-                                                                border-radius: 8px;
-                                                                width: 400px;
-                                                                height: 350px;  
-                                                        }
-                                                }
-
+                                                /*
                                                 &__tags {
                                                       
-                                                        /* &__technos + &__tools {
+                                                        &__technos + &__tools {
                                                         *        Propriétés définies dans le fichier scss > components > _filters.scss
                                                         }
-                                                        */
+                                                }
+                                                */
+                                        }
+
+                                        .excerpt-and-goToTheProject {
+                                                padding: 0 10px;
+                                        }
+                                }
+                        }
+                }
+        }
+
+        //= Giant  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($big-max+1)){
+                .projects-div {
+
+                        .all-projects {
+
+                                .one-project {
+                                        width: 30%;
+                                }
+                        }
+                }
+        }
+
+         //= Au-dessus de Giant  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         @media all and (min-width: ($giant-max+1)){
+                .projects-div {
+
+                        .all-projects {
+
+                                .one-project {
+                                        width: 30%;
+
+                                        .link-project-card {
+                                                width: 100%;
+
+                                                .img-and-tags {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: space-between;
+
+                                                        &__img {
+                                                                width: 50%;
+                                                                
+                                                                .thumbnail {
+                                                                        width: 100%;
+                                                                        height: auto;
+
+                                                                }
+                                                        }
+
+                                                        &__tags {
+                                                                width: 50%;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                align-items: center;
+                                                        }
                                                 }
                                         }
                                 }

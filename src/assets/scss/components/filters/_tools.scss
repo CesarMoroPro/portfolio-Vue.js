@@ -48,4 +48,17 @@
                         }
                 }
         }
+
+        //= Au-dessus de Giant  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($giant-max+1)){
+                .img-and-tags {
+
+                        &__tags {
+
+                                &__tools {
+                                        width: 100%;
+                                }
+                        }
+                } 
+        }
 }
