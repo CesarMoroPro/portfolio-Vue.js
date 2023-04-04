@@ -45,8 +45,8 @@ function goVue() {
                 {
                         template: `
                                 <div class="pre-header">
-                                        <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="#" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
-                                        <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="#" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
+                                        <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
+                                        <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/c%C3%A9sar-moro/" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
                                         <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" />
                                 </div>
                         `
@@ -101,8 +101,8 @@ function goVue() {
                         </div>
 
                         <div class="post-footer">
-                                <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="#" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
-                                <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="#" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
+                                <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
+                                <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/c%C3%A9sar-moro/" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
                                 <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" bounce />
                         </div>
                 `
