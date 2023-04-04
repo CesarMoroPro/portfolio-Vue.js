@@ -7,7 +7,7 @@
  */
 
 //= ---------------------------------------------------------------------------------------------------------
-//^ 1. IMPORTS NÉCESSAIRES
+//^ 1. IMPORTS PACKAGES NÉCESSAIRES
 //* (Reset.css est importé dans le fichier "sccs/main.scss" !)
 //* Import du package Parallax.js, qui est appelé après l'instance de Vue
 import '../node_modules/rellax/rellax.min.js';
@@ -26,6 +26,9 @@ library.add(faGithub, faYoutube, faLinkedin)
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
 // Import du Root-Component
 import App from './App.vue';
+
+//^ IMPORTS JS FILES
+import { initHeightProjectCard } from './assets/js/height-project.js';
 
 
 
@@ -98,6 +101,7 @@ function goRellax() {
 function init() {
         goVue();
         goRellax();
+        initHeightProjectCard();
 
         // const el = document.querySelector('.one-project');
         // console.log(el.offsetWidth);
