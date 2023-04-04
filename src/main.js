@@ -96,7 +96,7 @@ function goVue() {
                 template: `
                         <div class="id-and-copyright">
                                 César MORO - Web Development <br>
-                                Développeur Front-end JavaScript - Vue.js <br>
+                                <span class="important">Développeur Front-end JavaScript - Vue.js</span><br>
                                 Copyright <span id="copy-year">Année injectée en JS Vanilla</span>
                         </div>
 

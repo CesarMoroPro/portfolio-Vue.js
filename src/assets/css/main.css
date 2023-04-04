@@ -23,6 +23,10 @@ body h1 {
   color: black;
   text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
 }
+body .important {
+  color: #00ff00;
+  font-weight: bold;
+}
 
 .pre-header {
   width: 100%;

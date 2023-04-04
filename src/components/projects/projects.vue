@@ -80,14 +80,14 @@
                                 v-if="project.githubIcon"
                                 >
                                         <font-awesome-icon class="icon icon-github-mini" icon="fa-brands fa-github" shake />
-                                        <p class="link">{{ project.link }}</p>
+                                        <p class="link important">{{ project.link }}</p>
                                 </div>
 
                                 <div class="icon-and-goToTheProject"
                                 v-else-if="project.youtubeIcon"
                                 >
                                         <font-awesome-icon class="icon icon-github-mini" icon="fa-brands fa-youtube" fade />
-                                        <p class="link">{{ project.link }}</p>
+                                        <p class="link important">{{ project.link }}</p>
                                 </div>
                         </a>
                 </div>
