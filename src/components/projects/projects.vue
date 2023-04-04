@@ -12,10 +12,10 @@
 
 </categoriesComponent>
 
-<div class="all-projects" v-for="(project, index) in projectsList" :key="index">
+<div class="all-projects">
         <div 
         class="one-project"
-        
+        v-for="(project, index) in projectsList" :key="index"
         >
                 <a class="link-project-card" href="http://cesarmorowebdevelopment.com">
 
@@ -25,7 +25,7 @@
                                 <h3>{{ project.title.toLocaleUpperCase() }}</h3>
                         </div>
                         <div class="title-and-date__date">
-                                <p>{{ project.date }}</p>
+                                <p>Date de publication : {{ project.date }}</p>
                         </div>
                 </div>
 
@@ -155,7 +155,7 @@ export default {
                                                 },
                                                 {
                                                         store: "others",
-                                                        name: [],
+                                                        name: ["Responsibe"],
                                                 },
                                         ],
                                         excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement !",

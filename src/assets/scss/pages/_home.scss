@@ -4,7 +4,7 @@
         h2 {
                 margin-bottom: 30px;
                 color: $light-green;
-                font-size: 1.4em;
+                font-size: 1.8em;  /* Définit la taille des h2 dans le corps principal. S'applique aux h2 des projets, pour change,r il faut aller les modifier directement dans le fichier sccs > _projects.scss */
         }
 
         p {

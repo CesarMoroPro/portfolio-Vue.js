@@ -1,6 +1,18 @@
-.horizontal-separator {
-        width: 85%;
-        height: 1px;
-        background-color: $white;
-        margin: 20px 0;
+.main-div {
+
+        .projects-div {
+
+                .all-projects {
+
+                        .one-project {
+
+                                .horizontal-separator {
+                                        width: 85%;
+                                        height: 1px;
+                                        background-color: $white;
+                                        margin: 20px 0;
+                                }
+                        }
+                }
+        }
 }

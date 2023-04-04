@@ -34,9 +34,21 @@ body h1 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  /*
+  .icons {
+           CSS is defined in the Scss file 'components > _icons.scss'
+  }
+  */
 }
-.pre-header .icons {
-  /* CSS is defined in the Scss file 'components > _icons.scss' */
+@media all and (min-width: 851px) {
+  .pre-header {
+    height: 70px;
+  }
+}
+@media all and (min-width: 851px) {
+  .pre-header {
+    height: 80px;
+  }
 }
 
 .header-main {
@@ -135,7 +147,7 @@ body h1 {
 .main-div h2 {
   margin-bottom: 30px;
   color: #00ff00;
-  font-size: 1.4em;
+  font-size: 1.8em; /* Définit la taille des h2 dans le corps principal. S'applique aux h2 des projets, pour change,r il faut aller les modifier directement dans le fichier sccs > _projects.scss */
 }
 .main-div p {
   color: #fcfffd;
@@ -188,8 +200,12 @@ body h1 {
 }
 
 .main-div .img-and-tags__tags__technos {
-  width: 100%;
+  width: auto;
   margin: 15px 30px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .main-div .img-and-tags__tags__technos .technos-container {
   display: flex;
@@ -207,9 +223,14 @@ body h1 {
   margin: 5px 5px;
   list-style-type: none;
 }
+@media all and (min-width: 1101px) {
+  .main-div .img-and-tags__tags__technos .technos-container {
+    width: 450px;
+  }
+}
 
 .main-div .img-and-tags__tags__tools {
-  width: 100%;
+  width: auto;
   margin: 15px 30px 10px;
   display: flex;
   flex-direction: row;
@@ -232,6 +253,11 @@ body h1 {
   margin: 5px 5px;
   list-style-type: none;
 }
+@media all and (min-width: 1101px) {
+  .main-div .img-and-tags__tags__tools {
+    width: 450px;
+  }
+}
 
 .pre-header .icons {
   color: #00ff00;
@@ -248,6 +274,18 @@ body h1 {
   height: 25px;
 }
 
+@media all and (min-width: 851px) {
+  .pre-header .icons {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media all and (min-width: 851px) {
+  .pre-header .icons {
+    width: 60px;
+    height: 60px;
+  }
+}
 .all-logos {
   width: 100%;
   height: 100%;
@@ -531,7 +569,7 @@ body h1 {
 }
 .main-div .projects-div .all-projects .one-project .title-and-date__title {
   color: #00ff00;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 .main-div .projects-div .all-projects .one-project .title-and-date__date {
   font-size: 0.7em;
@@ -542,15 +580,6 @@ body h1 {
   flex-direction: column;
   align-items: center;
   color: #000000;
-  /*
-  &__tags {
-
-          &__technos + &__tools {
-          *        Propriétés définies dans le fichier scss > components > _filters.scss
-          }
-
-  }
-  */
 }
 .main-div .projects-div .all-projects .one-project .img-and-tags__img {
   margin-bottom: 20px;
@@ -560,8 +589,19 @@ body h1 {
   width: 400px;
   height: 350px;
 }
+.main-div .projects-div .all-projects .one-project .img-and-tags__tags {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+  &__technos + &__tools {
+  *        Propriétés définies dans le fichier scss > components > _filters.scss
+  }
+  */
+}
 .main-div .projects-div .all-projects .one-project .excerpt-and-goToTheProject {
-  width: 95%;
+  width: auto;
   margin: 15px 30px 10px;
   display: flex;
   flex-direction: column;
@@ -599,6 +639,7 @@ body h1 {
   }
   .main-div .projects-div .all-projects .one-project {
     width: 80%;
+    padding: 15px;
   }
   .main-div .projects-div .all-projects .one-project .img-and-tags {
     width: 100%;
@@ -622,8 +663,34 @@ body h1 {
     */
   }
 }
+@media all and (min-width: 1101px) {
+  .main-div .projects-div .all-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .main-div .projects-div .all-projects .one-project {
+    width: 40%;
+  }
+  .main-div .projects-div .all-projects .one-project .img-and-tags {
+    flex-direction: column;
+  }
+  .main-div .projects-div .all-projects .one-project .img-and-tags__img .thumbnail {
+    border-radius: 8px;
+    width: 400px;
+    height: 350px;
+  }
+  .main-div .projects-div .all-projects .one-project .img-and-tags__tags {
+    /* &__technos + &__tools {
+    *        Propriétés définies dans le fichier scss > components > _filters.scss
+    }
+    */
+  }
+}
 
-.horizontal-separator {
+.main-div .projects-div .all-projects .one-project .horizontal-separator {
   width: 85%;
   height: 1px;
   background-color: #fcfffd;

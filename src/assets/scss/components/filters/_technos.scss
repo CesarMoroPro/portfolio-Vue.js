@@ -1,12 +1,17 @@
 .main-div {
 
+        //= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         .img-and-tags {
 
                 &__tags {
 
                         &__technos {
-                                width: 100%;
-                                margin: 15px 30px 10px;                        
+                                width: auto;
+                                margin: 15px 30px 10px;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: center;
 
                                 .technos-container {
                                         display: flex;
@@ -27,6 +32,23 @@
                                 }
                         }
                         
+                }
+        }
+
+        //= Destkop et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($desktop-max+1)){
+                
+                .img-and-tags {
+
+                        &__tags {
+
+                                &__technos {
+
+                                        .technos-container {
+                                                width: 450px;
+                                        }
+                                }
+                        }
                 }
         }
 }

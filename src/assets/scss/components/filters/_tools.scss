@@ -1,11 +1,12 @@
 .main-div {
 
+        //= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         .img-and-tags {
 
                 &__tags {
 
                         &__tools {
-                                width: 100%;
+                                width: auto;
                                 margin: 15px 30px 10px;
                                 display: flex;
                                 flex-direction: row;
@@ -30,6 +31,21 @@
                                         }
                                 }
                         } 
+                }
+        }
+
+        //= Destkop et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($desktop-max+1)){
+                
+                .img-and-tags {
+
+                        &__tags {
+
+                                &__tools {
+                                        width: 450px;
+
+                                }
+                        }
                 }
         }
 }

@@ -1,3 +1,4 @@
+//= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .pre-header {
 
         .icons {
@@ -19,6 +20,28 @@
                                 width: 25px;
                                 height: 25px;
                         }
+                }
+        }
+}
+
+//= Destkop - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media all and (min-width: ($tablet-max+1)) {
+        .pre-header {
+
+                .icons {
+                        width: 50px;
+                        height: 50px;
+                }
+        }
+}
+
+//= Destkop - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media all and (min-width: ($tablet-max+1)) {
+        .pre-header {
+
+                .icons {
+                        width: 60px;
+                        height: 60px;
                 }
         }
 }

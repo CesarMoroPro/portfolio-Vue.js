@@ -98,6 +98,9 @@ function goRellax() {
 function init() {
         goVue();
         goRellax();
+
+        // const el = document.querySelector('.one-project');
+        // console.log(el.offsetWidth);
 }
 
 

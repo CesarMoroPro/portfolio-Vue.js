@@ -51,7 +51,7 @@
                 
                                         &__title {
                                                 color: $light-green;
-                                                font-size: 1.2em;
+                                                font-size: 1.6em;
                                         }
                 
                                         &__date {
@@ -76,19 +76,23 @@
                                                 }
                                         }
 
-                                        /*
                                         &__tags {
 
+                                                width: 100%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+
+                                                /*
                                                 &__technos + &__tools {
                                                 *        Propriétés définies dans le fichier scss > components > _filters.scss
                                                 }
-                                                
+                                                */
                                         }
-                                        */
                                 }
 
                                 .excerpt-and-goToTheProject {
-                                        width: 95%;
+                                        width: auto;
                                         margin: 15px 30px 10px;
                                         display: flex;
                                         flex-direction: column;
@@ -138,6 +142,7 @@
 
                                 .one-project {
                                         width: 80%; 
+                                        padding: 15px;
 
                                         .img-and-tags {
                                                 width: 100%;
@@ -160,6 +165,45 @@
                                                         flex-direction: column;
                                                         align-items: center;
 
+                                                        /* &__technos + &__tools {
+                                                        *        Propriétés définies dans le fichier scss > components > _filters.scss
+                                                        }
+                                                        */
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+
+        //= Destkop et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        @media all and (min-width: ($desktop-max+1)){
+                .projects-div {
+
+                        .all-projects {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                                align-items: flex-start;
+                                flex-wrap: wrap;
+
+                                .one-project {
+                                        width: 40%;
+
+                                        .img-and-tags {
+                                                flex-direction: column;
+
+                                                &__img {
+        
+                                                        .thumbnail {
+                                                                border-radius: 8px;
+                                                                width: 400px;
+                                                                height: 350px;  
+                                                        }
+                                                }
+
+                                                &__tags {
+                                                      
                                                         /* &__technos + &__tools {
                                                         *        Propriétés définies dans le fichier scss > components > _filters.scss
                                                         }
