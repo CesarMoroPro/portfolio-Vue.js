@@ -144,6 +144,21 @@ body h1 {
   }
 }
 
+footer {
+  background-color: #000000;
+  color: #fcfffd;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .id-and-copyright {
+  text-align: center;
+}
+
 .main-div h2 {
   margin-bottom: 30px;
   color: #00ff00;

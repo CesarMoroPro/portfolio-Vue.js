@@ -16,7 +16,6 @@ export function initHeightProjectCard() {
                 // Je stocke chaque nouvelle hauteur dans le tableau
                 heightArray.push(height);
         });
-        
 
         // Parmi toutes les valeurs du tableau, je trie dans l'ordre décroissant avec la méthode '.sort()'
         // MAIS ! Elle renvoie des chaînes de caractères. Il faut une fonction que l'on incluera dans 'sort()'

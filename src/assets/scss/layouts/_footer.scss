@@ -1,0 +1,18 @@
+footer {
+        
+        //= Mobile - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        background-color: $black;
+        color: $white;
+        font-size: 0.8em;
+        line-height: 1.6em;
+
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .id-and-copyright {
+                text-align: center;
+        }
+}

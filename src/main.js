@@ -28,6 +28,7 @@ import { createApp } from 'vue/dist/vue.esm-bundler.js';
 import App from './App.vue';
 
 //^ IMPORTS JS FILES
+import { letsGetCurrentYear } from './assets/js/copyright.js';
 import { initHeightProjectCard } from './assets/js/height-project.js';
 
 
@@ -89,6 +90,15 @@ function goVue() {
                         `
                 }
         )
+        .component("theFooter", {
+                template: `
+                        <div class="id-and-copyright">
+                                César MORO - Web Development <br>
+                                Développeur Front-end JavaScript - Vue.js <br>
+                                Copyright <span id="copy-year">Année injectée en JS Vanilla</span>
+                        </div>
+                `
+        })
         
         .mount('#app');
 }
@@ -101,6 +111,7 @@ function goRellax() {
 function init() {
         goVue();
         goRellax();
+        letsGetCurrentYear();
         initHeightProjectCard();
 
         // const el = document.querySelector('.one-project');

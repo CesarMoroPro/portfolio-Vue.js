@@ -15,6 +15,10 @@
         <theProjectsComponent></theProjectsComponent>
       </div>
     </main>
+
+    <footer>
+      <theFooter></theFooter>
+    </footer>
 </template>
 
 
