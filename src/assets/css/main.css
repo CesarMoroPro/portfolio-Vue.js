@@ -189,6 +189,14 @@ footer .id-and-copyright {
   }
 }
 
+.main-div {
+  position: relative;
+  /*
+  .all-logos {
+          CSS défini dans le fichier 'scss > components > _parallax.scss'
+  }
+  */
+}
 .main-div h2 {
   margin-bottom: 30px;
   color: #00ff00;
@@ -203,6 +211,7 @@ footer .id-and-copyright {
   margin: 0 10px 40px;
 }
 .main-div .projects-categories ul {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -341,249 +350,69 @@ footer .id-and-copyright {
     height: 60px;
   }
 }
-.all-logos {
+.main-div .skills-zone .parallax {
   width: 100%;
-  height: 100%;
 }
-.all-logos .logos {
+.main-div .skills-zone .parallax .all-logos .logos {
   width: 65px;
   height: 65px;
+  opacity: 0.5;
 }
-@media all and (max-width: 650px) {
-  .all-logos .logo__html {
-    position: absolute;
-    bottom: 15px;
-    left: 25px;
-    z-index: 1;
-  }
-  .all-logos .logo__css {
-    position: absolute;
-    top: 120px;
-    right: 15px;
-  }
-  .all-logos .logo__javascript {
-    position: absolute;
-    top: 280px;
-    left: 50px;
-  }
-  .all-logos .logo__node {
-    position: absolute;
-    bottom: 80px;
-    right: 10px;
-  }
-  .all-logos .logo__php {
-    position: absolute;
-    top: 35px;
-    right: 115px;
-  }
-  .all-logos .logo__sass {
-    position: absolute;
-    top: 250px;
-    right: 35px;
-  }
-  .all-logos .logo__vue {
-    position: absolute;
-    top: 130px;
-    left: 50px;
-  }
+.main-div .skills-zone .parallax .all-logos .logo__vue {
+  position: absolute;
+  top: 1%;
+  left: 45%;
 }
-@media all and (min-width: 651px) and (max-width: 850px) {
-  .all-logos .logo__html {
-    position: absolute;
-    bottom: 15px;
-    left: 50px;
-  }
-  .all-logos .logo__css {
-    position: absolute;
-    top: 220px;
-    right: 90px;
-  }
-  .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 115px;
-  }
-  .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 65px;
-  }
-  .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 220px;
-  }
-  .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 130px;
-  }
-  .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 180px;
-  }
+.main-div .skills-zone .parallax .all-logos .logo__html {
+  position: absolute;
+  top: 6%;
+  left: 15%;
 }
-@media all and (min-width: 851px) and (max-width: 1100px) {
-  .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 130px;
-  }
-  .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 160px;
-  }
-  .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 200px;
-  }
-  .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 165px;
-  }
-  .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 295px;
-  }
-  .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 230px;
-  }
-  .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 280px;
-  }
+.main-div .skills-zone .parallax .all-logos .logo__css {
+  position: absolute;
+  top: 9%;
+  right: 25%;
 }
-@media all and (min-width: 1101px) and (max-width: 1500px) {
-  .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 210px;
-    z-index: 3;
-  }
-  .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 280px;
-  }
-  .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 330px;
-    z-index: 2;
-  }
-  .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 280px;
-  }
-  .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 440px;
-  }
-  .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 350px;
-  }
-  .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 400px;
-    z-index: 4;
-  }
+.main-div .skills-zone .parallax .all-logos .logo__sass {
+  position: absolute;
+  top: 14%;
+  left: 35%;
 }
-@media all and (min-width: 1501px) and (max-width: 2000px) {
-  .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 370px;
-    z-index: 3;
-  }
-  .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 420px;
-  }
-  .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 490px;
-    z-index: 2;
-  }
-  .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 450px;
-  }
-  .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 650px;
-  }
-  .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 580px;
-  }
-  .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 600px;
-    z-index: 4;
-  }
+.main-div .skills-zone .parallax .all-logos .logo__javascript {
+  position: absolute;
+  top: 13%;
+  right: 35%;
 }
-@media all and (min-width: 2001px) {
-  .all-logos .logo__html {
-    position: absolute;
-    bottom: 10px;
-    left: 500px;
-    z-index: 3;
-  }
-  .all-logos .logo__css {
-    position: absolute;
-    top: 200px;
-    right: 650px;
-  }
-  .all-logos .logo__javascript {
-    position: absolute;
-    top: 380px;
-    left: 700px;
-    z-index: 2;
-  }
-  .all-logos .logo__node {
-    position: absolute;
-    bottom: 55px;
-    right: 700px;
-  }
-  .all-logos .logo__php {
-    position: absolute;
-    top: 135px;
-    right: 900px;
-  }
-  .all-logos .logo__sass {
-    position: absolute;
-    top: 350px;
-    right: 800px;
-  }
-  .all-logos .logo__vue {
-    position: absolute;
-    top: 230px;
-    left: 850px;
-    z-index: 4;
-  }
+.main-div .skills-zone .parallax .all-logos .logo__node {
+  position: absolute;
+  top: 22%;
+  right: 20%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__php {
+  position: absolute;
+  top: 17%;
+  left: 27%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__mysql {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  opacity: 0.9;
+}
+.main-div .skills-zone .parallax .all-logos .logo__wordpress {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  opacity: 1;
+}
+.main-div .skills-zone .parallax .all-logos .logo__github {
+  position: absolute;
+  top: 45%;
+  right: 40%;
+  opacity: 1;
 }
 
 .main-div .projects-div {
-  z-index: 10;
   background: #000000;
   background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
   padding: 50px 0 15px;
@@ -592,6 +421,7 @@ footer .id-and-copyright {
   text-align: center;
 }
 .main-div .projects-div .all-projects {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: space-evenly;
@@ -775,8 +605,7 @@ footer .id-and-copyright {
   margin: 20px 0;
 }
 
-.main-div .skills {
-  z-index: 10;
+.main-div .skills-zone .skills {
   padding: 50px 0 15px;
   background: #000000;
   background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
@@ -785,7 +614,8 @@ footer .id-and-copyright {
   justify-content: center;
   align-items: center;
 }
-.main-div .skills .left, .main-div .skills .right {
+.main-div .skills-zone .skills .left, .main-div .skills-zone .skills .right {
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -794,15 +624,15 @@ footer .id-and-copyright {
   margin-bottom: 30px;
 }
 @media all and (min-width: 651px) {
-  .main-div .skills {
+  .main-div .skills-zone .skills {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
-  .main-div .skills .left {
+  .main-div .skills-zone .skills .left {
     width: 50%;
   }
-  .main-div .skills .right {
+  .main-div .skills-zone .skills .right {
     width: 50%;
   }
 }

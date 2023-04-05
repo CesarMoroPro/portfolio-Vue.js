@@ -30,7 +30,7 @@ import App from './App.vue';
 
 //^ IMPORTS JS FILES
 import { letsGetCurrentYear } from './assets/js/copyright.js';
-import { initHeightProjectCard } from './assets/js/height-project.js';
+// import { windowSizeDetection } from './assets/js/window-size-detection.js';
 
 
 
@@ -116,11 +116,12 @@ function goRellax() {
 }
 
 
-function init() {
+function init() {        
         goVue();
         goRellax();
+
         letsGetCurrentYear();
-        //initHeightProjectCard();
+        //windowSizeDetection();
 
         // const el = document.querySelector('.one-project');
         // console.log(el.offsetWidth);

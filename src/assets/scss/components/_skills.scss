@@ -1,43 +1,49 @@
 .main-div {
 
         //= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        .skills {
-                z-index: 10;  // vis-à-vis de la parallax notamment
+       .skills-zone {
 
-                padding: 50px 0 15px;
-                background: $black;
-                background: $gradient-black-dark-green-black;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                .skills {
 
-
-                .left, .right {
-                        width: 100%;
+                        padding: 50px 0 15px;
+                        background: $black;
+                        background: $gradient-black-dark-green-black;
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
                         align-items: center;
-                        margin: 5px;
-                        margin-bottom: 30px;
+
+
+                        .left, .right {
+                                z-index: 1;  // vis-à-vis de la parallax notamment
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin: 5px;
+                                margin-bottom: 30px;
+                        }
                 }
-        }
+       }
 
         //= Tablet et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        .skills {
+        .skills-zone {
 
-                @media all and (min-width: ($mobile-max+1)) {
-        
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: flex-start;
-        
-                        .left {
-                                width: 50%;
-                        }
-        
-                        .right {
-                                width: 50%;
+                .skills {
+
+                        @media all and (min-width: ($mobile-max+1)) {
+                
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: flex-start;
+                
+                                .left {
+                                        width: 50%;
+                                }
+                
+                                .right {
+                                        width: 50%;
+                                }
                         }
                 }
         }

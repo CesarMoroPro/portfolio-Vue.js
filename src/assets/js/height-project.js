@@ -4,6 +4,7 @@
  */
 
 export function initHeightProjectCard() {
+
         // Je récupère toutes les cartes de projets, soit '.one-project'
         const projectCardsArray = document.querySelectorAll('.one-project');
         // Je crée un tableau destiné à stocker toutes les hauteurs récupérées
@@ -33,5 +34,5 @@ export function initHeightProjectCard() {
                 element.style.height = higherHeight + "px";
         });
         
-        console.log(higherHeight)
-}
+        // console.log(higherHeight);
+};
