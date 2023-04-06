@@ -1,0 +1,218 @@
+.main-div {
+
+        .skills-zone {
+
+                .parallax {
+                        width: 100%;
+
+                        .all-logos {                                
+                        
+                                .logos {
+                                        width: 65px;
+                                        height: 65px;
+                                        opacity: 0.5;             
+                                }
+
+                                .logo {
+
+                                        &__vue {
+                                                width: 90px;
+                                                height: 90px;
+                                                position: absolute;
+                                                top: 1%;
+                                                left: 42%;
+                                        }
+                
+                                        &__html {
+                                                position: absolute;
+                                                top: 6%;
+                                                left: 15%;
+                                        }
+                
+                                        &__css {
+                                                position: absolute;
+                                                top: 9%;
+                                                right: 05%;
+                                        }
+
+                                                                
+                                        &__sass {
+                                                position:  absolute;
+                                                top: 14%;
+                                                left: 35%; 
+                                        }
+                
+                                        &__javascript {
+                                                position: absolute;
+                                                top: 13%;
+                                                right: 35%;
+                                        }
+                
+                                        &__node {
+                                                position: absolute;
+                                                top: 22%;
+                                                right: 20%;
+                                                opacity: 0,85;
+                                        }
+                
+                                        &__php {
+                                                position: absolute;
+                                                top: 17%;
+                                                left: 20%;
+                                        }
+
+                                        &__mysql {
+                                                position: absolute;
+                                                top: 20%;
+                                                left: 5%;
+                                                opacity: 0.9;
+                                        }
+
+                                        &__wordpress {
+                                                position: absolute;
+                                                top: 25%;
+                                                right: 15%;
+                                                opacity: 1;
+                                        }
+
+                                        &__github {
+                                                position: absolute;
+                                                top: 45%;
+                                                right: 40%;
+                                                opacity: 1;
+                                        }
+                                }
+                        }
+                }
+        }
+
+        //= Tablette
+        @media all and (min-width: ($mobile-max+1)) and (max-width: $tablet-max) {
+                .skills-zone {
+
+                        .parallax {
+                                width: 100%;
+
+                                .all-logos {                                
+                                
+                                        .logos {                                      
+                                                width: 80px;
+                                                height: 80px;
+                                        }
+
+                                        .logo {
+                                                
+                                                &__vue {
+                                                        width: 105px;
+                                                        height: 105px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+
+        //= Bureau
+        @media all and (min-width: ($tablet-max+1)) and (max-width: $desktop-max) {
+                .skills-zone {
+
+                        .parallax {
+                                width: 100%;
+
+                                .all-logos {                                
+                                
+                                        .logos {                                      
+                                                width: 100px;
+                                                height: 100px;
+                                        }
+
+                                        .logo {
+
+                                                &__vue {
+                                                        width: 125px;
+                                                        height: 125px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+
+        //= Big
+        @media all and (min-width: ($desktop-max+1)) and (max-width: $big-max) {
+                .skills-zone {
+
+                        .parallax {
+                                width: 100%;
+
+                                .all-logos {                                
+                                
+                                        .logos {                                      
+                                                width: 120px;
+                                                height: 120px;
+                                        }
+
+                                        .logo {
+
+                                                &__vue {
+                                                        width: 145px;
+                                                        height: 145px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+
+        //= Giant
+        @media all and (min-width: ($big-max+1)) and (max-width: $giant-max) {
+                .skills-zone {
+
+                        .parallax {
+                                width: 100%;
+
+                                .all-logos {                                
+                                
+                                        .logos {                                      
+                                                width: 140px;
+                                                height: 140px;
+                                        }
+
+                                        .logo {
+
+                                                &__vue {
+                                                        width: 165px;
+                                                        height: 165px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+                        
+        //= Giant PLUS
+        @media all and (min-width: ($giant-max+1)) {
+                .skills-zone {
+
+                        .parallax {
+                                width: 100%;
+
+                                .all-logos {                                
+                                
+                                        .logos {                                      
+                                                width: 160px;
+                                                height: 160px;
+                                        }
+
+                                        .logo {
+
+                                                &__vue {
+                                                        width: 185px;
+                                                        height: 185px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }                
+}

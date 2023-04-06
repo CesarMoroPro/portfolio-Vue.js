@@ -448,68 +448,6 @@ footer .id-and-copyright {
     height: 60px;
   }
 }
-.main-div .skills-zone .parallax {
-  width: 100%;
-}
-.main-div .skills-zone .parallax .all-logos .logos {
-  width: 65px;
-  height: 65px;
-  opacity: 0.5;
-}
-.main-div .skills-zone .parallax .all-logos .logo__vue {
-  position: absolute;
-  top: 1%;
-  left: 45%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__html {
-  position: absolute;
-  top: 6%;
-  left: 15%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__css {
-  position: absolute;
-  top: 9%;
-  right: 25%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__sass {
-  position: absolute;
-  top: 14%;
-  left: 35%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__javascript {
-  position: absolute;
-  top: 13%;
-  right: 35%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__node {
-  position: absolute;
-  top: 22%;
-  right: 20%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__php {
-  position: absolute;
-  top: 17%;
-  left: 27%;
-}
-.main-div .skills-zone .parallax .all-logos .logo__mysql {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  opacity: 0.9;
-}
-.main-div .skills-zone .parallax .all-logos .logo__wordpress {
-  position: absolute;
-  top: 25%;
-  right: 15%;
-  opacity: 1;
-}
-.main-div .skills-zone .parallax .all-logos .logo__github {
-  position: absolute;
-  top: 45%;
-  right: 40%;
-  opacity: 1;
-}
-
 .main-div .projects-div {
   background: #000000;
   background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
@@ -693,6 +631,136 @@ footer .id-and-copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.main-div .skills-zone .parallax {
+  width: 100%;
+}
+.main-div .skills-zone .parallax .all-logos .logos {
+  width: 65px;
+  height: 65px;
+  opacity: 0.5;
+}
+.main-div .skills-zone .parallax .all-logos .logo__vue {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 1%;
+  left: 42%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__html {
+  position: absolute;
+  top: 6%;
+  left: 15%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__css {
+  position: absolute;
+  top: 9%;
+  right: 5%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__sass {
+  position: absolute;
+  top: 14%;
+  left: 35%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__javascript {
+  position: absolute;
+  top: 13%;
+  right: 35%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__node {
+  position: absolute;
+  top: 22%;
+  right: 20%;
+  opacity: 0, 85;
+}
+.main-div .skills-zone .parallax .all-logos .logo__php {
+  position: absolute;
+  top: 17%;
+  left: 20%;
+}
+.main-div .skills-zone .parallax .all-logos .logo__mysql {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  opacity: 0.9;
+}
+.main-div .skills-zone .parallax .all-logos .logo__wordpress {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  opacity: 1;
+}
+.main-div .skills-zone .parallax .all-logos .logo__github {
+  position: absolute;
+  top: 45%;
+  right: 40%;
+  opacity: 1;
+}
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .main-div .skills-zone .parallax {
+    width: 100%;
+  }
+  .main-div .skills-zone .parallax .all-logos .logos {
+    width: 80px;
+    height: 80px;
+  }
+  .main-div .skills-zone .parallax .all-logos .logo__vue {
+    width: 105px;
+    height: 105px;
+  }
+}
+@media all and (min-width: 851px) and (max-width: 1100px) {
+  .main-div .skills-zone .parallax {
+    width: 100%;
+  }
+  .main-div .skills-zone .parallax .all-logos .logos {
+    width: 100px;
+    height: 100px;
+  }
+  .main-div .skills-zone .parallax .all-logos .logo__vue {
+    width: 125px;
+    height: 125px;
+  }
+}
+@media all and (min-width: 1101px) and (max-width: 1500px) {
+  .main-div .skills-zone .parallax {
+    width: 100%;
+  }
+  .main-div .skills-zone .parallax .all-logos .logos {
+    width: 120px;
+    height: 120px;
+  }
+  .main-div .skills-zone .parallax .all-logos .logo__vue {
+    width: 145px;
+    height: 145px;
+  }
+}
+@media all and (min-width: 1501px) and (max-width: 2000px) {
+  .main-div .skills-zone .parallax {
+    width: 100%;
+  }
+  .main-div .skills-zone .parallax .all-logos .logos {
+    width: 140px;
+    height: 140px;
+  }
+  .main-div .skills-zone .parallax .all-logos .logo__vue {
+    width: 165px;
+    height: 165px;
+  }
+}
+@media all and (min-width: 2001px) {
+  .main-div .skills-zone .parallax {
+    width: 100%;
+  }
+  .main-div .skills-zone .parallax .all-logos .logos {
+    width: 160px;
+    height: 160px;
+  }
+  .main-div .skills-zone .parallax .all-logos .logo__vue {
+    width: 185px;
+    height: 185px;
   }
 }
 
