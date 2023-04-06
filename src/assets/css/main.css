@@ -112,11 +112,36 @@ body h1, body h2, body h3 {
 body h1 {
   font-size: 3em;
   color: black;
+  letter-spacing: 0.015em;
   text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
 }
 body .important {
   color: #00ff00;
   font-weight: bold;
+}
+@media all and (min-width: 651px) {
+  body h1 {
+    font-size: 3.5em;
+    letter-spacing: 0.25em;
+  }
+}
+@media all and (min-width: 851px) {
+  body h1 {
+    font-size: 4em;
+    letter-spacing: 0.4em;
+  }
+}
+@media all and (min-width: 1101px) {
+  body h1 {
+    font-size: 4.5em;
+    letter-spacing: 0.6em;
+  }
+}
+@media all and (min-width: 1501px) {
+  body h1 {
+    font-size: 5em;
+    letter-spacing: 0.8em;
+  }
 }
 
 .pre-header {
@@ -216,8 +241,9 @@ body .important {
   top: 83px;
 }
 .header-main .ID__name h2 {
-  font-size: 2em;
   color: black;
+  font-size: 2em;
+  letter-spacing: 0.04em;
   text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
 }
 .header-main .k2000 {
@@ -236,8 +262,27 @@ body .important {
   animation: k2000Laser 2s linear;
 }
 @media all and (min-width: 651px) {
-  .header-main {
-    padding-top: 200px;
+  .header-main .ID__name h2 {
+    font-size: 2.5em;
+    letter-spacing: 0.6em;
+  }
+}
+@media all and (min-width: 851px) {
+  .header-main .ID__name h2 {
+    font-size: 3em;
+    letter-spacing: 1em;
+  }
+}
+@media all and (min-width: 1101px) {
+  .header-main .ID__name h2 {
+    font-size: 3.5em;
+    letter-spacing: 1.25em;
+  }
+}
+@media all and (min-width: 1501px) {
+  .header-main .ID__name h2 {
+    font-size: 4em;
+    letter-spacing: 1.5em;
   }
 }
 
@@ -293,11 +338,36 @@ footer .id-and-copyright {
 .main-div h2 {
   margin-bottom: 30px;
   color: #00ff00;
-  font-size: 1.8em; /* Définit la taille des h2 dans le corps principal. S'applique aux h2 des projets, pour change,r il faut aller les modifier directement dans le fichier sccs > _projects.scss */
+  font-size: 2em;
+  letter-spacing: 0.04em;
 }
 .main-div p {
   color: #fcfffd;
   line-height: 25px;
+}
+@media all and (min-width: 651px) {
+  .main-div h2 {
+    font-size: 2.1em;
+    letter-spacing: 0.065em;
+  }
+}
+@media all and (min-width: 851px) {
+  .main-div h2 {
+    font-size: 2.4em;
+    letter-spacing: 0.25em;
+  }
+}
+@media all and (min-width: 1101px) {
+  .main-div h2 {
+    font-size: 2.6em;
+    letter-spacing: 0.4em;
+  }
+}
+@media all and (min-width: 1501px) {
+  .main-div h2 {
+    font-size: 3em;
+    letter-spacing: 0.6em;
+  }
 }
 
 .main-div .projects-categories {

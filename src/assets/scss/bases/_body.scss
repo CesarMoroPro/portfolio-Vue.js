@@ -12,12 +12,13 @@ body {
         h1 {
                 font-size: 3em;
                 color: black;
+                letter-spacing: 0.015em;
 
                 // Ajouter un text-shadow via une mixin
                 @include text-shadow-for-pulse-effect($light-green);
         }
          
-        //* Puisqu'il pourra y avoir différents h2, h3, ..., (couleurs, fonds, tailles), les propriétés sont définies dans le fichier selon leur rôle !
+        //* Puisqu'il pourra y avoir différents h2, h3, ..., (couleurs, fonds, tailles), les propriétés plus spécifiques sont définies dans le fichier selon leur rôle !
 
 
         //^ Classes générales
@@ -25,4 +26,36 @@ body {
                 color: $light-green;
                 font-weight: bold;
         }
+
+        //= Tablet - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($mobile-max+1)) {
+                h1 {
+                        font-size: 3.5em;
+                        letter-spacing: 0.25em;
+                }
+        }       
+
+        //= Desktop - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($tablet-max+1)) {
+                h1 {
+                        font-size: 4em;
+                        letter-spacing: 0.4em;
+                }
+        }
+
+        //= Big - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($desktop-max+1)) {
+                h1 {
+                        font-size: 4.5em;
+                        letter-spacing: 0.6em;
+                }
+        }
+
+        //= Giant - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($big-max+1)) {
+                h1 {
+                        font-size: 5em;
+                        letter-spacing: 0.8em;
+                }
+        }     
 }

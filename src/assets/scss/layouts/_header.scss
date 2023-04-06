@@ -78,8 +78,9 @@
                         }
 
                         h2 {
-                                font-size: 2em;
                                 color: black;
+                                font-size: 2em;
+                                letter-spacing: 0.04em;
 
                                 // Ajout d'un text-shadow via une mixin
                                 @include text-shadow-for-pulse-effect($light-green);
@@ -105,9 +106,60 @@
                 }
         }
 
-        //= Tablet et au-dessus - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         //= Tablet - - - - - - - - - - - - - - - - - 
         @media all and (min-width: ($mobile-max+1)) {
-                padding-top: 200px;
-        }
+                .ID {
+
+                        &__name {
+
+                                h2 {
+                                        font-size: 2.5em;
+                                        letter-spacing: 0.6em;
+                                }
+                        }
+                }
+        }       
+
+        //= Desktop - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($tablet-max+1)) {
+                .ID {
+
+                        &__name {
+
+                                h2 {
+                                        font-size: 3em;
+                                        letter-spacing: 1em;
+                                }
+                        }
+                }
+        }       
+
+        //= Big - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($desktop-max+1)) {
+                .ID {
+
+                        &__name {
+
+                                h2 {
+                                        font-size: 3.5em;
+                                        letter-spacing: 1.25em;
+                                }
+                        }
+                }
+        }       
+
+        //= Giant - - - - - - - - - - - - - - - - - 
+        @media all and (min-width: ($big-max+1)) {
+                .ID {
+
+                        &__name {
+
+                                h2 {
+                                        font-size: 4em;
+                                        letter-spacing: 1.5em;
+                                }
+                        }
+                }
+        }       
 
 }
