@@ -1,8 +1,9 @@
 //^ Import des opérateurs mathématiques Sass (notamment la division)
 @use "sass:math";
 
-//^ Import de reset.css
+//^ Import des node_modules
 @import '../../../node_modules/reset.css/reset.css';
+@import '../../../node_modules/atropos//atropos.scss';
 
 //^ Import des fichiers UTILS
 @import './utils/variables';
@@ -28,8 +29,9 @@
 @import './components/filters/technos';
 @import './components/filters/tools';
 // Others components
+@import './components/_atropos';
 @import './components/icons';
-@import './components/parallax';
+@import './components/rellax';
 @import './components/projects';
 @import './components/separators';
 @import './components/skills';

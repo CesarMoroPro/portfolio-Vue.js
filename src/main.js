@@ -4,15 +4,19 @@
  *      2. DOM-Content-loaded => init();
  *      3. init() => goVue() => Instance de Vue ;
  *      4. init() => goRellax() => Instance de Rellax ;
+ *      5. init() => goAtropos() => Instance de Atrapos ;
  */
 
 //= ---------------------------------------------------------------------------------------------------------
 //^ 1. IMPORTS PACKAGES NÉCESSAIRES
 //* (Reset.css est importé dans le fichier "sccs/main.scss" !)
-//* Import du package Parallax.js, qui est appelé après l'instance de Vue
+//* Import du package Rellax.js, qui est appelé après l'instance de Vue
 import '../node_modules/rellax/rellax.min.js';
+//* Import du package Atrapos.js qui est appelé après l'instance de Vue
+ // import Atropos library
+ import Atropos from 'atropos';
 
-//* Import de FontAwesome pour Vue 3 !
+//* Import de FONTAWESOME pour Vue 3 !
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
@@ -23,12 +27,13 @@ import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
 library.add(faGithub, faLinkedin, faAddressCard, faYoutube);
 
-// Import du module pour créer une instance de Vue
+//* Import du module pour créer une instance de Vue
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
 // Import du Root-Component
 import App from './App.vue';
 
-//^ IMPORTS JS FILES
+
+//^ IMPORTS JS CUSTOM FILES
 import { letsGetCurrentYear } from './assets/js/copyright.js';
 // import { windowSizeDetection } from './assets/js/window-size-detection.js';
 
@@ -57,19 +62,24 @@ function goVue() {
                         template: `
                                 <div class="header-main">
         
-                                        <!-- <div class="all-logos">
-                                                <img class="logos logo__html rellax" data-rellax-speed="5" src="../src/assets/img/logos/html-5.svg"/>
-                                                <img class="logos logo__css rellax" data-rellax-speed="1" src="../src/assets/img/logos/css-3.svg"/>
-                                                <img class="logos logo__javascript rellax" data-rellax-speed="3" src="../src/assets/img/logos/javascript.svg"/>
-                                                <img class="logos logo__node rellax" data-rellax-speed="4" src="../src/assets/img/logos/nodejs.svg"/>
-                                                <img class="logos logo__php rellax" data-rellax-speed="-3" src="../src/assets/img/logos/php.svg"/>
-                                                <img class="logos logo__sass rellax" data-rellax-speed="2" src="../src/assets/img/logos/sass.svg"/>
-                                                <img class="logos logo__vue rellax" data-rellax-speed="-3" src="../src/assets/img/logos/vue.svg"/>
-                                        </div> -->
-        
                                         <div class="ID">
                                                 <div class="ID__pic">
-                                                        <img src="../src/assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png" alt="Photo de profil">
+                                                        <!-- main Atropos container (required), add your custom class here -->
+                                                        <div class="atropos my-atropos">
+                                                                <!-- scale container (required) -->
+                                                                <div class="atropos-scale">
+                                                                        <!-- rotate container (required) -->
+                                                                        <div class="atropos-rotate">
+                                                                        <!-- inner container (required) -->
+                                                                                <div class="atropos-inner">
+                                                                                        <!-- put your custom content here -->
+                                                                                        <img src="../src/assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png" alt="Photo de profil" data-atropos-opacity="0.8;1">
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+
                                                         <!-- <div class="effect-zone"</div> -->
                                                                 <div class="effect-zone__pixel-effect"></div>
                                                         <!-- </div> -->
@@ -115,11 +125,26 @@ function goRellax() {
         const rellax = new Rellax('.rellax');
 }
 
+function goAtropos() {
+        // Initialize
+        const myAtropos = Atropos({
+                el: '.my-atropos',
+                activeOffset: 120,
+                shadowScale: 1.05,
+                highlight: false,
+        });
+}
+
 
 function init() {        
+        //* Lancement de l'instance de Vue
         goVue();
+
+        //* Lancement des libraries JS
+        goAtropos();
         goRellax();
 
+        //* Lancement des fichiers JS personnalisés
         letsGetCurrentYear();
         //windowSizeDetection();
 
