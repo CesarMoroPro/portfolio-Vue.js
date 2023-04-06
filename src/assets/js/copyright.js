@@ -1,5 +1,7 @@
 /* Ce fichier est destiné à injecter dans le footer l'année du copyright de manière automatisée */
 
+import { createHydrationRenderer } from "vue";
+
 export function letsGetCurrentYear() {
         // Je définis une constante qui stocke l'année en cours
         const date = new Date;

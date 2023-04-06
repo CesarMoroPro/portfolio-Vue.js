@@ -35,6 +35,7 @@ import App from './App.vue';
 
 //^ IMPORTS JS CUSTOM FILES
 import { letsGetCurrentYear } from './assets/js/copyright.js';
+import { iconsHovered } from './assets/js/icons-hovered.js';
 // import { windowSizeDetection } from './assets/js/window-size-detection.js';
 
 
@@ -50,7 +51,7 @@ function goVue() {
                 {
                         template: `
                                 <div class="pre-header">
-                                        <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
+                                        <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mes repos Github" title="Lien externe vers mes repos Github" />
                                         <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/c%C3%A9sar-moro/" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
                                         <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" />
                                 </div>
@@ -63,22 +64,18 @@ function goVue() {
                                 <div class="header-main">
         
                                         <div class="ID">
+
                                                 <div class="ID__pic">
-                                                        <!-- main Atropos container (required), add your custom class here -->
-                                                        <div class="atropos my-atropos">
-                                                                <!-- scale container (required) -->
-                                                                <div class="atropos-scale">
-                                                                        <!-- rotate container (required) -->
-                                                                        <div class="atropos-rotate">
-                                                                        <!-- inner container (required) -->
-                                                                                <div class="atropos-inner">
+                                                        <div class="atropos my-atropos"> <!-- main Atropos container (required), add your custom class here -->
+                                                                <div class="atropos-scale"> <!-- scale container (required) -->
+                                                                        <div class="atropos-rotate"> <!-- rotate container (required) -->
+                                                                                <div class="atropos-inner"> <!-- inner container (required) -->
                                                                                         <!-- put your custom content here -->
                                                                                         <img src="../src/assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png" alt="Photo de profil" data-atropos-opacity="0.8;1">
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                         </div>
-
 
                                                         <!-- <div class="effect-zone"</div> -->
                                                                 <div class="effect-zone__pixel-effect"></div>
@@ -111,7 +108,7 @@ function goVue() {
                         </div>
 
                         <div class="post-footer">
-                                <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mon repo Github" title="Lien externe vers mon repo Github" />
+                                <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mes repos Github" title="Lien externe vers mes repos Github" />
                                 <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/c%C3%A9sar-moro/" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
                                 <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" bounce />
                         </div>
@@ -146,6 +143,7 @@ function init() {
 
         //* Lancement des fichiers JS personnalisés
         letsGetCurrentYear();
+        iconsHovered();
         //windowSizeDetection();
 
         // const el = document.querySelector('.one-project');
