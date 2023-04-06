@@ -33,10 +33,10 @@
 <!--= ---------- SCRIPT ---------- -->
 <script>
 // Import des SFCs
-import Hardskills from "./components/skills/hardskills.vue";
-import Softskills from "./components/skills/softskills.vue";
-import Projects from "./components/projects/projects.vue";
-import ParallaxLogos from "./components/visuals/parallax-logos.vue";
+import Hardskills from "./Vue-components/skills/hardskills.vue";
+import Softskills from "./Vue-components/skills/softskills.vue";
+import Projects from "./Vue-components/projects/projects.vue";
+import ParallaxLogos from "./Vue-components/visuals/parallax-logos.vue";
 
 export default {
   components: {
