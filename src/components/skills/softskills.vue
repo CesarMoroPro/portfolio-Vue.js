@@ -1,6 +1,6 @@
 <template>
         <div class="right">
-                <h2>{{ title }}</h2>
+                <h2 class="rellax" data-rellax-speed="1">{{ title }}</h2>
                 <div v-for="(element, index) in softskillsList" :key="index">
                         <p>{{ element.name }} </p>
                 </div>

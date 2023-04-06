@@ -1,5 +1,5 @@
 <template>
-<h2>Mes réalisations</h2>
+<h2 class="rellax" data-rellax-speed="1">Mes réalisations</h2>
 
 <!--* ICI Component des filtres Catégories (Front, Back, Full) -->
 <!--J'envoie le tableau projectsList dans le SFC categories.vue, via la props projectsListProp-->

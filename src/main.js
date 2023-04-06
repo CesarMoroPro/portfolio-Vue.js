@@ -34,9 +34,7 @@ import App from './App.vue';
 
 
 //^ IMPORTS JS CUSTOM FILES
-import { letsGetCurrentYear } from './assets/js/copyright.js';
-import { iconsHovered } from './assets/js/icons-hovered.js';
-// import { windowSizeDetection } from './assets/js/window-size-detection.js';
+import { customJsFiles } from './assets/js/main-JS-custom-files.js';
 
 
 
@@ -137,14 +135,15 @@ function init() {
         //* Lancement de l'instance de Vue
         goVue();
 
+        //* Lancement des  JS custom files
+        //! Laisser ces custom files avant les libraires car une partie de Rellax.js en a besoin !!
+        customJsFiles();
+
         //* Lancement des libraries JS
         goAtropos();
         goRellax();
 
-        //* Lancement des fichiers JS personnalisés
-        letsGetCurrentYear();
-        iconsHovered();
-        //windowSizeDetection();
+
 
         // const el = document.querySelector('.one-project');
         // console.log(el.offsetWidth);
