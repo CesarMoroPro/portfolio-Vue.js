@@ -71,23 +71,29 @@
                 <div class="excerpt-and-goToTheProject">
                         <p class="excerpt-and-goToTheProject__excerpt">{{ project.excerpt }}</p>
                         
-                        <a 
+                        <a
+                        v-if="project.githubIcon"
                         class="excerpt-and-goToTheProject__goToTheProject" 
-                        :href="project.link"
+                        :href="project.githubLink"
                         >
                                 <div 
                                 class="icon-and-goToTheProject" 
-                                v-if="project.githubIcon"
                                 >
                                         <font-awesome-icon class="icon icon-github-mini" icon="fa-brands fa-github" shake />
-                                        <p class="link important">{{ project.link }}</p>
+                                        <p class="link important">{{ project.linkDisplay }}</p>
                                 </div>
+                        </a>
+
+                        <a
+                        v-else-if="project.youtubeIcon"
+                        class="excerpt-and-goToTheProject__goToTheProject"
+                        :href="project.youtubeLink"
+                        >
 
                                 <div class="icon-and-goToTheProject"
-                                v-else-if="project.youtubeIcon"
                                 >
                                         <font-awesome-icon class="icon icon-github-mini" icon="fa-brands fa-youtube" fade />
-                                        <p class="link important">{{ project.link }}</p>
+                                        <p class="link important">{{ project.linkDisplay }}</p>
                                 </div>
                         </a>
                 </div>
@@ -112,7 +118,7 @@ export default {
                                 {
                                         title: "Mon Portfolio",
                                         date: "23/03/2023",
-                                        image: "./src/assets/img/minitatures-projets/portfolio-400*350.png",
+                                        image: "./src/assets/img/minitatures-projets/portfolio/portfolio-400*350.png",
                                         technos: [
                                                 "HTML", "CSS", "JavaScript"
                                         ],
@@ -131,7 +137,7 @@ export default {
                                                 },
                                                 {
                                                         store: "libraries",
-                                                        name: [ "Rellax.js"],
+                                                        name: [ "Atropos.js", "Rellax.js"],
                                                 },
                                                 {
                                                         store: "cmss",
@@ -155,24 +161,26 @@ export default {
                                                 },
                                                 {
                                                         store: "others",
-                                                        name: ["Responsibe"],
+                                                        name: ["Responsive", "Statique"],
                                                 },
                                         ],
-                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement !",
-                                        link: "lien vers le repo GitHub",
+                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La version dynamique avec un back-end Node.js est en cours de développement",
+                                        githubLink: "https://google.com",
                                         githubIcon: true,
+                                        youtubeLink: "",
                                         youtubeIcon: true,
+                                        linkDisplay: "lien vers le repo GitHub",
                                         finition: "front-end",
 
                                 },
 
-                                /* Deadpool 3 */
+                                /* Devnest */
                                 {
-                                        title: "Vivement DeadPool 3 !",
-                                        date: "30/04/2023",
-                                        image: "./src/assets/img/logos/vue.svg",
+                                        title: "Devnest",
+                                        date: "12/12/2020",
+                                        image: "./src/assets/img/minitatures-projets/devnest/devnest.jpg",
                                         technos: [
-                                                "HTML", "CSS", "JavaScript",
+                                                "HTML", "CSS", "JavaScript", "PHP",
                                         ],
                                         tools: [
                                                 {
@@ -181,15 +189,15 @@ export default {
                                                 },
                                                 {
                                                         store: "frameworks",
-                                                        name: [ "Vue.js 3" ],
+                                                        name: [  ],
                                                 },
                                                 {
                                                         store: "builders",
-                                                        name: [ "Vite" ],
+                                                        name: [ "Parcel.js" ],
                                                 },
                                                 {
                                                         store: "libraries",
-                                                        name: [ "Rellax.js"],
+                                                        name: [ "Isotop-layout"],
                                                 },
                                                 {
                                                         store: "cmss",
@@ -201,11 +209,11 @@ export default {
                                                 },
                                                 {
                                                         store: "bdds",
-                                                        name: [],
+                                                        name: [ "SQL", "MySQL", "phpMyAdmin" ],
                                                 },
                                                 {
                                                         store: "managers",
-                                                        name: [ "NPM"],
+                                                        name: [ "NPM, Composer"],
                                                 },
                                                 {
                                                         store: "versionnings",
@@ -216,69 +224,15 @@ export default {
                                                         name: [],
                                                 },
                                         ],
-                                        excerpt: "Un autre résumé",
-                                        link: "lien vers la vidéo Youtube",
+                                        excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile, de 6 mois au sein de l'école O'clock",
+                                        githubLink: "",
                                         githubIcon: false,
+                                        youtubeLink: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
                                         youtubeIcon: true,
+                                        linkDisplay: "Lien vers la vidéo YouTube",
                                         finition: "fullstack",
                                 },
-
-                                /* Deadpool 3 */
-                                {
-                                        title: "Vivement DeadPool 3 !",
-                                        date: "30/04/2023",
-                                        image: "./src/assets/img/logos/vue.svg",
-                                        technos: [
-                                                "HTML", "CSS", "JavaScript",
-                                        ],
-                                        tools: [
-                                                {
-                                                        store: "preprocessors",
-                                                        name: [ "Sass" ],
-                                                },
-                                                {
-                                                        store: "frameworks",
-                                                        name: [ "Vue.js 3" ],
-                                                },
-                                                {
-                                                        store: "builders",
-                                                        name: [ "Vite" ],
-                                                },
-                                                {
-                                                        store: "libraries",
-                                                        name: [ "Rellax.js"],
-                                                },
-                                                {
-                                                        store: "cmss",
-                                                        name: [],
-                                                },
-                                                {
-                                                        store: "sgbds",
-                                                        name: [],
-                                                },
-                                                {
-                                                        store: "bdds",
-                                                        name: [],
-                                                },
-                                                {
-                                                        store: "managers",
-                                                        name: [ "NPM"],
-                                                },
-                                                {
-                                                        store: "versionnings",
-                                                        name: [ "Git", "GitHub" ],
-                                                },
-                                                {
-                                                        store: "others",
-                                                        name: [],
-                                                },
-                                        ],
-                                        excerpt: "Un autre résumé",
-                                        link: "lien vers la vidéo Youtube",
-                                        githubIcon: false,
-                                        youtubeIcon: true,
-                                        finition: "fullstack",
-                                },
+                                
                         ],
                         filterName: null,
                 }
