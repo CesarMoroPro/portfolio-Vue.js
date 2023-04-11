@@ -2,7 +2,7 @@
 
         //= Mobile et tablet - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         .projects-div {
-                
+                z-index: 2; // vis-à-vis de la parallax notamment
 
                 background: $black;
                 background: $gradient-black-dark-green-black;

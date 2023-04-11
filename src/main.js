@@ -142,11 +142,6 @@ function init() {
         //* Lancement des libraries JS
         goAtropos();
         goRellax();
-
-
-
-        // const el = document.querySelector('.one-project');
-        // console.log(el.offsetWidth);
 }
 
 

@@ -5,7 +5,7 @@
                 margin: 0 10px 40px;
 
                 ul {
-                        z-index: 1;  // vis-à-vis de la parallax notamment
+                        z-index: 5;  // vis-à-vis de la parallax notamment
                        display: flex;
                         flex-direction: row;
                         justify-content: space-evenly;

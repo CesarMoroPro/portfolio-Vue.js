@@ -374,7 +374,7 @@ footer .id-and-copyright {
   margin: 0 10px 40px;
 }
 .main-div .projects-categories ul {
-  z-index: 1;
+  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -519,6 +519,7 @@ footer .id-and-copyright {
   }
 }
 .main-div .projects-div {
+  z-index: 2;
   background: #000000;
   background: linear-gradient(to bottom, #000000 15%, #1e7b1e 50%, #000000 85%);
   padding: 50px 0 15px;

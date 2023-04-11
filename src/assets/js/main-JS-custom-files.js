@@ -2,7 +2,7 @@
 
 import { letsGetCurrentYear } from './custom-files/copyright.js';
 import { iconsHovered } from './custom-files/icons-hovered.js';
-// import { windowSizeDetection } from './assets/js/window-size-detection.js';
+import { initHeightProjectCard } from './custom-files/height-project.js';
 
 export function customJsFiles() {
 
@@ -10,7 +10,8 @@ export function customJsFiles() {
         iconsHovered();
 
         // Main-div
-        // windowSizeDetection();
+        initHeightProjectCard();
+        screen.addEventListener('resize', initHeightProjectCard );
         
         // Footer
         letsGetCurrentYear();
