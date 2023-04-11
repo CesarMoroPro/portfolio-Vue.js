@@ -189,7 +189,7 @@ export default {
                                                 },
                                                 {
                                                         store: "frameworks",
-                                                        name: [  ],
+                                                        name: [],
                                                 },
                                                 {
                                                         store: "builders",
@@ -197,7 +197,7 @@ export default {
                                                 },
                                                 {
                                                         store: "libraries",
-                                                        name: [ "Isotop-layout"],
+                                                        name: [ "Isotope-layout"],
                                                 },
                                                 {
                                                         store: "cmss",

@@ -546,7 +546,7 @@ footer .id-and-copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 3px;
 }
 .main-div .projects-div .all-projects .one-project .link-project-card {

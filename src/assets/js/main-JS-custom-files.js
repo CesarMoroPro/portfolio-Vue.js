@@ -10,8 +10,8 @@ export function customJsFiles() {
         iconsHovered();
 
         // Main-div
-        initHeightProjectCard();
-        screen.addEventListener('resize', initHeightProjectCard );
+        initHeightProjectCard(); /* Calcule la hauteur des cartes dès le chargement de la page */
+        screen.addEventListener('resize', initHeightProjectCard ); /* Calcule la hauteur des cartes à chaque changement de taille de la fenêtre */
         
         // Footer
         letsGetCurrentYear();
