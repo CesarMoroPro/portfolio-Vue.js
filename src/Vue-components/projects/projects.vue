@@ -118,7 +118,7 @@ export default {
                                 {
                                         title: "Mon Portfolio",
                                         date: "23/03/2023",
-                                        image: "./src/assets/img/minitatures-projets/portfolio/portfolio-400*350.png",
+                                        image: "./src/assets/img/minitatures-projets/portfolio/portfolio-original.png",
                                         technos: [
                                                 "HTML", "CSS", "JavaScript"
                                         ],
@@ -169,7 +169,7 @@ export default {
                                         githubIcon: true,
                                         youtubeLink: "",
                                         youtubeIcon: true,
-                                        linkDisplay: "lien vers le repo GitHub",
+                                        linkDisplay: "Lien vers le repo GitHub",
                                         finition: "front-end",
 
                                 },
@@ -180,7 +180,7 @@ export default {
                                         date: "12/12/2020",
                                         image: "./src/assets/img/minitatures-projets/devnest/devnest.jpg",
                                         technos: [
-                                                "HTML", "CSS", "JavaScript", "PHP",
+                                                "HTML", "CSS", "JavaScript", "PHP", "SQL",
                                         ],
                                         tools: [
                                                 {
@@ -209,7 +209,7 @@ export default {
                                                 },
                                                 {
                                                         store: "bdds",
-                                                        name: [ "SQL", "MySQL", "phpMyAdmin" ],
+                                                        name: [ "MySQL", "phpMyAdmin" ],
                                                 },
                                                 {
                                                         store: "managers",

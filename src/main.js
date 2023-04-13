@@ -69,7 +69,7 @@ function goVue() {
                                                                         <div class="atropos-rotate"> <!-- rotate container (required) -->
                                                                                 <div class="atropos-inner"> <!-- inner container (required) -->
                                                                                         <!-- put your custom content here -->
-                                                                                        <img src="../src/assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png" alt="Photo de profil" data-atropos-opacity="0.8;1">
+                                                                                        <img src="./src/assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png" alt="Photo de profil" data-atropos-opacity="0.8;1">
                                                                                 </div>
                                                                         </div>
                                                                 </div>
