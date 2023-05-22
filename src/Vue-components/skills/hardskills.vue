@@ -68,11 +68,6 @@ export default {
 
                                 {
                                         id: "",
-                                        name: "EJS",
-                                },
-
-                                {
-                                        id: "",
                                         name: "Axios",
                                 },
 
@@ -89,11 +84,6 @@ export default {
                                 {
                                         id: "",
                                         name: "Reset.css",
-                                },
-
-                                {
-                                        id: "",
-                                        name: "Bootstrap",
                                 },
 
                                 {

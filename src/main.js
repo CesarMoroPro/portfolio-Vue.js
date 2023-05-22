@@ -22,15 +22,23 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faGithub, faLinkedin, faYoutube  } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faYoutube, faWordpress  } from '@fortawesome/free-brands-svg-icons';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
-library.add(faGithub, faLinkedin, faAddressCard, faYoutube);
+library.add(faGithub, faLinkedin, faAddressCard, faYoutube, faWordpress);
 
 //* Import du module pour créer une instance de Vue
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
 // Import du Root-Component
 import App from './App.vue';
+
+//* Import des images EN STATIQUE
+/* Pourquoi importer les images ?
+Le build de Vite ne sait pas forcément prendre tous les assets pour les inclure dans le répertoire `dist > assets`.
+En faisant un import des images, le build se fait correctement.
+https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
+*/
+import profilMajorqueImg from './assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png';
 
 
 //^ IMPORTS JS CUSTOM FILES
@@ -69,7 +77,7 @@ function goVue() {
                                                                         <div class="atropos-rotate"> <!-- rotate container (required) -->
                                                                                 <div class="atropos-inner"> <!-- inner container (required) -->
                                                                                         <!-- put your custom content here -->
-                                                                                        <img src="./src/assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png" alt="Photo de profil" data-atropos-opacity="0.8;1">
+                                                                                        <img :src=profilMajorqueImg  alt="Photo de profil" data-atropos-opacity="0.8;1">
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -94,14 +102,20 @@ function goVue() {
                                         </div> -->
                                         
                                 </div>
-                        `
+                        `,
+
+                        data() {
+                                return {
+                                        profilMajorqueImg
+                                }
+                        }
                 }
         )
         .component("theFooter", {
                 template: `
                         <div class="id-and-copyright">
                                 César MORO - Web Development <br>
-                                <span class="important">Développeur Front-end JavaScript - Vue.js</span><br>
+                                <span class="important">Développeur JavaScript - Vue.js - Node.js</span><br>
                                 Copyright <span id="copy-year">Année injectée en JS Vanilla</span>
                         </div>
 
