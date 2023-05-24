@@ -100,6 +100,30 @@
     margin-right: 0%;
   }
 }
+@keyframes rainbow {
+  from {
+    color: #1e7b1e;
+  }
+  20% {
+    color: rgb(236, 245, 66);
+    transform: rotate(25deg);
+  }
+  40% {
+    color: rgb(250, 25, 25);
+    transform: rotate(75deg);
+  }
+  60% {
+    color: rgb(198, 12, 245);
+    transform: rotate(100deg);
+  }
+  80% {
+    color: rgb(12, 245, 175);
+    transform: rotate(50deg);
+  }
+  to {
+    color: #1e7b1e;
+  }
+}
 body {
   margin: auto;
   min-width: 400px;
@@ -395,6 +419,11 @@ footer .id-and-copyright {
   height: 1.2rem;
   margin: 1.2rem 1.2rem 0 0;
 }
+.contact-popup__cross-mark .icon-cross-mark:hover {
+  animation-name: rainbow;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
 .contact-popup__info-phone, .contact-popup__info-mail {
   display: flex;
   flex-direction: row;
@@ -407,6 +436,9 @@ footer .id-and-copyright {
   width: 1.5rem;
   height: 1.5rem;
   margin: 0 1.2rem 0 1.2rem;
+}
+.contact-popup .infos-contact {
+  font-size: 1.2rem;
 }
 
 @media all and (min-width: 651px) {
