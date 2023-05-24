@@ -10,11 +10,11 @@
 //= ---------------------------------------------------------------------------------------------------------
 //^ 1. IMPORTS PACKAGES NÉCESSAIRES
 //* (Reset.css est importé dans le fichier "sccs/main.scss" !)
-//* Import du package Rellax.js, qui est appelé après l'instance de Vue
-import '../node_modules/rellax/rellax.min.js';
+//* Import du package Vue-Rellax, qui est appelé après l'instance de Vue
+import VueRellax from 'vue-rellax';
 //* Import du package Atrapos.js qui est appelé après l'instance de Vue
- // import Atropos library
- import Atropos from 'atropos';
+// import Atropos library
+import Atropos from 'atropos';
 
 //* Import de FONTAWESOME pour Vue 3 !
 /* import the fontawesome core */
@@ -32,6 +32,10 @@ import { createApp } from 'vue/dist/vue.esm-bundler.js';
 // Import du Root-Component
 import App from './App.vue';
 
+//^ IMPORT DE SFC
+import iconsComponent from "./Vue-components/social/socialIcons.vue";
+
+//^ IMPORT D'IMAGES QUI NE SE BUILD PAS
 //* Import des images EN STATIQUE
 /* Pourquoi importer les images ?
 Le build de Vite ne sait pas forcément prendre tous les assets pour les inclure dans le répertoire `dist > assets`.
@@ -39,7 +43,6 @@ En faisant un import des images, le build se fait correctement.
 https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
 */
 import profilMajorqueImg from './assets/img/avatars/portfolio-profil-majorque-removebg-nb-effect.png';
-
 
 //^ IMPORTS JS CUSTOM FILES
 import { customJsFiles } from './assets/js/main-JS-custom-files.js';
@@ -57,11 +60,13 @@ function goVue() {
                 {
                         template: `
                                 <div class="pre-header">
-                                        <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mes repos Github" title="Lien externe vers mes repos Github" />
-                                        <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/c%C3%A9sar-moro/" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
-                                        <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" />
+                                        <iconsComponent></iconsComponent>
                                 </div>
-                        `
+                        `,
+
+                        components: {
+                                iconsComponent,
+                        }
                 }
         )
         .component("theHeader", 
@@ -120,18 +125,20 @@ function goVue() {
                         </div>
 
                         <div class="post-footer">
-                                <font-awesome-icon class="icons icon-github-small" icon="fa-brands fa-github" href="https://github.com/CesarMoroPro" alt="Lien externe vers mes repos Github" title="Lien externe vers mes repos Github" />
-                                <font-awesome-icon class="icons icon-linkedin-small" icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/c%C3%A9sar-moro/" alt="Lien externe vers mon profil LinkedIn" title="Lien externe vers mon profil LinkedIn" />
-                                <font-awesome-icon class="icons icon-adress-card-small" icon="fa-solid fa-address-card" href="#" alt="Lien interne pour me contacter" title="Lien interne pour me contacter" bounce />
+                                <iconsComponent></iconsComponent>
                         </div>
-                `
+                `,
+
+                components: {
+                        iconsComponent,
+                }
         })
         
         .mount('#app');
 }
 
 function goRellax() {
-        const rellax = new Rellax('.rellax');
+        Vue.use(VueRellax);
 }
 
 function goAtropos() {
