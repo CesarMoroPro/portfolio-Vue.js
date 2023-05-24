@@ -1,12 +1,16 @@
 <!--= ---------- TEMPLATE ---------- -->
 <template>
+  <div class="contact-div">
+    <ContactPopupComponent></ContactPopupComponent>
+  </div>
+
+  <div class="global-div">
     <header>
       <thePreHeader></thePreHeader>
       <theHeader></theHeader>
     </header>
 
     <main class="main-div">
-      <ContactPopupComponent></ContactPopupComponent>
 
       <div class="skills-zone">
         <div class="parallax">
@@ -23,11 +27,21 @@
       <div class="projects-div">
         <theProjectsComponent></theProjectsComponent>
       </div>
+      
+      <div class="NB">
+        <p>
+        NB : Portfolio : V 1.0.0.<br>
+        Certaines fonctionnalités ne sont pas encore optimales, voire opérationnelles. De même, certains aspects UX doivent être perfectionnés.<br>
+        Ces améliorations arriveront dans une prochaine version, néanmoins je ne suis pas en mesure de communiquer une date à ce jour.<br>
+        Merci de votre compréhension.
+        </p>
+</div>
     </main>
 
     <footer>
       <theFooter></theFooter>
     </footer>
+  </div>
 </template>
 
 

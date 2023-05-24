@@ -20,10 +20,14 @@
 export default {
         methods: {
                 closePopup() {
-                        //* Je récupère la popup de contact et je la masque avec la class "display-none"
+                        // Je récupère la popup de contact et je la masque avec la class "display-none"
                         const contactPopup = document.querySelector("#contact-popup");
                         contactPopup.classList.add("display-none");
 
+                        // Je récupère la div Global pour la déflouter
+                        //TODO : Lorsque la fonctionnalité rendant inactives toutes les intéractions pendant la popup contact sera opérationnelle, il faudra la désactiver
+                        const globalDiv = document.querySelector(".global-div");
+                        globalDiv.classList.remove('bluring');
                 },
         }
 }

@@ -20,6 +20,18 @@
                 line-height: 25px;
         }
 
+        .NB {
+                background-color: $black;
+
+                p {
+                        margin: 0 1.2rem;
+                        text-align: justify;
+                        font-size: 0.6em;
+                        line-height: 1.25em;
+                }
+
+        }
+
         //= Tablet - - - - - - - - - - - - - - - - - 
         @media all and (min-width: ($mobile-max+1)) {
                 h2 {

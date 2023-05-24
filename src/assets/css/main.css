@@ -139,12 +139,19 @@ body h1 {
   letter-spacing: 0.015em;
   text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
 }
+body .global-div {
+  position: absolute;
+  top: 0;
+}
 body .important {
   color: #00ff00;
   font-weight: bold;
 }
 body .display-none {
   display: none;
+}
+body .bluring {
+  filter: blur(1.5rem);
 }
 @media all and (min-width: 651px) {
   body h1 {
@@ -372,6 +379,15 @@ footer .id-and-copyright {
   color: #fcfffd;
   line-height: 25px;
 }
+.main-div .NB {
+  background-color: #000000;
+}
+.main-div .NB p {
+  margin: 0 1.2rem;
+  text-align: justify;
+  font-size: 0.6em;
+  line-height: 1.25em;
+}
 @media all and (min-width: 651px) {
   .main-div h2 {
     font-size: 2.1em;
@@ -399,6 +415,7 @@ footer .id-and-copyright {
 
 .contact-popup {
   z-index: 11;
+  position: fixed;
   width: 100%;
   height: auto;
   margin: auto;

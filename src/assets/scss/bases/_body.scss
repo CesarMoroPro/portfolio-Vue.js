@@ -22,6 +22,11 @@ body {
 
 
         //^ Classes générales
+        .global-div {
+                position: absolute;
+                top: 0;
+        }
+
         .important {
                 color: $light-green;
                 font-weight: bold;
@@ -29,6 +34,10 @@ body {
 
         .display-none {
                 display: none;
+        }
+
+        .bluring {
+                filter: blur(1.5rem);
         }
 
         //= Tablet - - - - - - - - - - - - - - - - - 

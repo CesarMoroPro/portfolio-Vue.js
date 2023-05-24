@@ -119,9 +119,9 @@ function goVue() {
         .component("theFooter", {
                 template: `
                         <div class="id-and-copyright">
-                                César MORO - Web Development <br>
+                                César Moro <br>
                                 <span class="important">Développeur JavaScript - Vue.js - Node.js</span><br>
-                                Copyright <span id="copy-year">Année injectée en JS Vanilla</span>
+                                https://cesar-moro.fr - Copyright <span id="copy-year">Année injectée en JS Vanilla</span>
                         </div>
 
                         <div class="post-footer">
