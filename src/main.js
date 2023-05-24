@@ -23,9 +23,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faGithub, faLinkedin, faYoutube, faWordpress  } from '@fortawesome/free-brands-svg-icons';
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faEnvelope, faMobileScreenButton, faSquareXmark } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
-library.add(faGithub, faLinkedin, faAddressCard, faYoutube, faWordpress);
+library.add(faGithub, faLinkedin, faAddressCard, faYoutube, faWordpress, faEnvelope, faMobileScreenButton, faSquareXmark);
 
 //* Import du module pour créer une instance de Vue
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
@@ -33,7 +33,7 @@ import { createApp } from 'vue/dist/vue.esm-bundler.js';
 import App from './App.vue';
 
 //^ IMPORT DE SFC
-import iconsComponent from "./Vue-components/social/socialIcons.vue";
+import iconsComponent from "./Vue-components/social/social-icons.vue";
 
 //^ IMPORT D'IMAGES QUI NE SE BUILD PAS
 //* Import des images EN STATIQUE

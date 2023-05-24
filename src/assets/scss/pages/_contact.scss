@@ -1,0 +1,107 @@
+.contact-popup {
+        z-index: 11;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color: $white;
+
+        &__cross-mark {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                
+                .icon-cross-mark {
+                        color: $dark-green;
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        margin: 1.2rem 1.2rem 0 0;
+                }
+        }
+
+        &__info-phone, &__info-mail {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 1.2rem;
+        }
+
+        .icon-contact {
+                color: $dark-green;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin: 0 1.2rem 0 1.2rem; // (H, D, B, G)
+        }
+}
+
+@media all and (min-width: ($mobile-max+1)) {
+        .contact-popup {
+
+                &__cross-mark {
+
+                        .icon-cross-mark {
+                                margin-right: 1.8rem;
+                        }
+                }
+
+                .icon-contact {
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                }
+        }
+}
+
+@media all and (min-width: ($tablet-max+1)) {
+        .contact-popup {
+
+                &__cross-mark {
+
+                        .icon-cross-mark {
+                                margin-right: 2.2rem;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                        }
+                }
+
+                .icon-contact {
+                        margin-left: 2.6rem;
+                        margin-right: 2.6rem;
+                        width: 2rem;
+                        height: 2rem;
+                }
+        }
+}
+
+@media all and (min-width: ($desktop-max+1)) {
+        .contact-popup {
+
+                &__cross-mark {
+
+                        .icon-cross-mark {
+                                margin-right: 2.8rem;
+                        }
+                }
+
+                &__info-phone, &__info-mail {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1.2rem 0 1.2rem 0;
+                }
+
+                .icon-contact {
+                        margin: 0 0 1.2rem 0;
+                        width: 3rem;
+                        height: 3rem;
+                }
+        }
+}

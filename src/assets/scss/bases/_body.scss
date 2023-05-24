@@ -27,6 +27,10 @@ body {
                 font-weight: bold;
         }
 
+        .display-none {
+                display: none;
+        }
+
         //= Tablet - - - - - - - - - - - - - - - - - 
         @media all and (min-width: ($mobile-max+1)) {
                 h1 {

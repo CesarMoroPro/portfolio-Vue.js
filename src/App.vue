@@ -6,6 +6,8 @@
     </header>
 
     <main class="main-div">
+      <ContactPopupComponent></ContactPopupComponent>
+
       <div class="skills-zone">
         <div class="parallax">
           <theParallaxLogos></theParallaxLogos>
@@ -37,6 +39,7 @@ import Hardskills from "./Vue-components/skills/hardskills.vue";
 import Softskills from "./Vue-components/skills/softskills.vue";
 import Projects from "./Vue-components/projects/projects.vue";
 import ParallaxLogos from "./Vue-components/visuals/parallax-logos.vue";
+import ContactPopupComponent from "./Vue-components/social/contact-popup.vue";
 
 export default {
   components: {
@@ -44,6 +47,7 @@ export default {
     theSoftskillsComponent: Softskills,
     theProjectsComponent: Projects,
     theParallaxLogos: ParallaxLogos,
+    ContactPopupComponent
   }
 }
 
