@@ -1,6 +1,6 @@
 <!--= ---------- TEMPLATE ---------- -->
 <template>
-  <div class="contact-div">
+  <div id="contact-div" class="contact-div">
     <ContactPopupComponent></ContactPopupComponent>
   </div>
 

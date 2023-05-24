@@ -22,6 +22,17 @@ body {
 
 
         //^ Classes générales
+        .contact-div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .contact-popup {
+                        width: 75%;
+                        position: absolute;
+                }
+        }
         .global-div {
                 position: absolute;
                 top: 0;

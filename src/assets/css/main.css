@@ -139,6 +139,16 @@ body h1 {
   letter-spacing: 0.015em;
   text-shadow: -3px 0px 3px #00ff00, 3px 0px 3px #00ff00;
 }
+body .contact-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body .contact-div .contact-popup {
+  width: 75%;
+  position: absolute;
+}
 body .global-div {
   position: absolute;
   top: 0;
