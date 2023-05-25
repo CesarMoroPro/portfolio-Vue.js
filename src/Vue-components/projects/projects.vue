@@ -177,7 +177,7 @@ export default {
                                                 },
                                                 {
                                                         store: "managers",
-                                                        name: [ "NPM, Composer"],
+                                                        name: [ "NPM", "Composer"],
                                                 },
                                                 {
                                                         store: "versionnings",
@@ -247,7 +247,7 @@ export default {
                                                 },
                                                 {
                                                         store: "others",
-                                                        name: [],
+                                                        name: ["Responsive"],
                                                 },
                                         ],
                                         linkProject: "https://acmweb.fr",
