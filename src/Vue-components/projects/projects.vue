@@ -378,7 +378,7 @@ export default {
                                                 },
                                         ],
                                         linkProject: "https://free-ocean.cesar-moro.fr",
-                                        excerpt: "Projet réalisé en Vanilla JavaScript, dont l'objectif était de développer la programmation fonctionnelle. Ce mini-jeu nécessite une version 1.2 afin de corriger quelques petits bugs. ⚠️ ATTENTION : le repo Github n'est pas à jour suite à de nombreuses mauvaises manipulations.",
+                                        excerpt: "Projet réalisé en Vanilla JavaScript, dont l'objectif était de développer la programmation fonctionnelle. Ce mini-jeu nécessite une version 1.2 afin de corriger quelques petits bugs. Projet non-responsive, je vous conseille de l'essayer sur ordinateur. ⚠️ ATTENTION : le repo Github n'est pas à jour suite à de nombreuses mauvaises manipulations.",
                                         githubLink: "https://github.com/CesarMoroPro/miniJeu-freeOcean",
                                         githubIcon: true,
                                         youtubeLink: "",
