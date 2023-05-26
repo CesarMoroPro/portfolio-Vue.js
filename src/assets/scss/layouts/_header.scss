@@ -90,6 +90,16 @@
                 }
         }
 
+        .presentation {
+
+                p {
+                        text-align: justify;
+                        margin: 15px 20px;
+                        color: $white;
+                        line-height: 1.75em;
+                }
+        }
+
         .k2000 {
                 width: 100%;
                 height: 10px;

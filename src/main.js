@@ -100,6 +100,12 @@ function goVue() {
                                                         <h2 class="rellax" data-rellax-speed="1">Développeur<br> Web & Web Mobile</h2>
                                                 </div>
                                         </div>
+
+                                        <div class="presentation">
+                                                <p>Issu d'une reconversion professionnelle en télé-présentiel avec l'&nbsp;<a href="https://oclock.io/" target="blank" class="link important important-background">École O'clock</a>, je suis à présent disponible pour mettre mes compétences à votre profit.</p>
+                                                <p>En plus des compétences techniques acquises lors de cette <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link important important-background">formation</a>, j'y ai appris "comment apprendre" et je prends du plaisir à continuer de progresser.</p>
+                                                <p>Alors, ensemble, aidons-nous à grandir et à évoluer !</p>
+                                        </div>
                                         
         
                                         <!-- <div class="k2000">
