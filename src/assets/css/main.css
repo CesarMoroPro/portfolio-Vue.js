@@ -761,6 +761,9 @@ footer .id-and-copyright {
   margin-left: 5px;
   font-size: 0.85em;
 }
+.main-div .projects-div .all-projects .one-project:hover {
+  box-shadow: 0px 4px 20px 0px rgba(252, 255, 253, 0.9);
+}
 @media all and (min-width: 851px) {
   .main-div .projects-div .all-projects {
     flex-direction: row;
