@@ -128,9 +128,10 @@ Le build de Vite ne sait pas forcément prendre tous les assets pour les inclure
 En faisant un import des images, le build se fait correctement.
 https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
 */
-import devnestImg from '../../../src/assets/img/minitatures-projets/devnest/devnest.jpg';
 import portfolioImg from '../../../src/assets/img/minitatures-projets/portfolio/portfolio-original.png';
 import acmwebImg from '../../../src/assets/img/minitatures-projets/acmweb/acmweb.png';
+import freeOceanImg from '../../../src/assets/img/minitatures-projets/free-ocean/free-ocean.png';
+import devnestImg from '../../../src/assets/img/minitatures-projets/devnest/devnest.jpg';
 
 
 export default {
@@ -138,13 +139,13 @@ export default {
                 return {
                         projectsList: [
 
-                                /* Devnest */
+                                /* Portfolio */
                                 {
-                                        title: "Devnest",
-                                        date: "12/12/2020",
-                                        image: devnestImg,
+                                        title: "Mon Portfolio",
+                                        date: "23/03/2023",
+                                        image: portfolioImg,
                                         technos: [
-                                                "HTML", "CSS", "JavaScript", "PHP", "SQL",
+                                                "HTML", "CSS", "JavaScript"
                                         ],
                                         tools: [
                                                 {
@@ -153,15 +154,15 @@ export default {
                                                 },
                                                 {
                                                         store: "frameworks",
-                                                        name: [],
+                                                        name: [ "Vue.js 3" ],
                                                 },
                                                 {
                                                         store: "builders",
-                                                        name: [ "Parcel.js" ],
+                                                        name: [ "Vite" ],
                                                 },
                                                 {
                                                         store: "libraries",
-                                                        name: [ "Isotope-layout"],
+                                                        name: [ "Atropos.js", "Rellax.js"],
                                                 },
                                                 {
                                                         store: "cmss",
@@ -173,11 +174,11 @@ export default {
                                                 },
                                                 {
                                                         store: "bdds",
-                                                        name: [ "MySQL", "phpMyAdmin" ],
+                                                        name: [],
                                                 },
                                                 {
                                                         store: "managers",
-                                                        name: [ "NPM", "Composer"],
+                                                        name: [ "NPM"],
                                                 },
                                                 {
                                                         store: "versionnings",
@@ -185,19 +186,20 @@ export default {
                                                 },
                                                 {
                                                         store: "others",
-                                                        name: [],
+                                                        name: ["Responsive", "Statique"],
                                                 },
                                         ],
-                                        linkProject: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
-                                        excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile, de 6 mois au sein de l'école O'clock",
-                                        githubLink: "",
-                                        githubIcon: false,
-                                        youtubeLink: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
+                                        linkProject: "https://cesar-moro.fr",
+                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La version dynamique avec un back-end Node.js est en cours de développement",
+                                        githubLink: "#",
+                                        githubIcon: true,
+                                        youtubeLink: "",
                                         youtubeIcon: true,
                                         wordpressLink: "",
                                         wordpressIcon: false,
-                                        linkDisplay: "Lien vers la vidéo YouTube",
-                                        finition: "fullstack",
+                                        linkDisplay: "Lien vers le repo GitHub",
+                                        finition: "front-end",
+
                                 },
 
                                 /* AM Web */
@@ -262,11 +264,11 @@ export default {
                                         finition: "fullstack",
                                 },
 
-                                /* Portfolio */
+                                /* Free-Ocean */
                                 {
-                                        title: "Mon Portfolio",
-                                        date: "23/03/2023",
-                                        image: portfolioImg,
+                                        title: "Mini jeu : Free OCean",
+                                        date: "01/10/2022",
+                                        image: freeOceanImg,
                                         technos: [
                                                 "HTML", "CSS", "JavaScript"
                                         ],
@@ -277,15 +279,15 @@ export default {
                                                 },
                                                 {
                                                         store: "frameworks",
-                                                        name: [ "Vue.js 3" ],
+                                                        name: [],
                                                 },
                                                 {
                                                         store: "builders",
-                                                        name: [ "Vite" ],
+                                                        name: [],
                                                 },
                                                 {
                                                         store: "libraries",
-                                                        name: [ "Atropos.js", "Rellax.js"],
+                                                        name: [],
                                                 },
                                                 {
                                                         store: "cmss",
@@ -312,17 +314,79 @@ export default {
                                                         name: ["Responsive", "Statique"],
                                                 },
                                         ],
-                                        linkProject: "https://cesar-moro.fr",
-                                        excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La version dynamique avec un back-end Node.js est en cours de développement",
-                                        githubLink: "#",
+                                        linkProject: "https://free-ocean.cesar-moro.fr",
+                                        excerpt: "Projet réalisé en Vanilla JavaScript, dont l'objectif était de développer la programmation fonctionnelle. Ce mini-jeu nécessite une version 1.2 afin de corriger quelques petits bugs. ⚠️ ATTENTION : le repo Github n'est pas à jour suite à de nombreuses mauvaises manipulations.",
+                                        githubLink: "https://github.com/CesarMoroPro/miniJeu-freeOcean",
                                         githubIcon: true,
                                         youtubeLink: "",
-                                        youtubeIcon: true,
+                                        youtubeIcon: false,
                                         wordpressLink: "",
                                         wordpressIcon: false,
                                         linkDisplay: "Lien vers le repo GitHub",
                                         finition: "front-end",
 
+                                },
+
+                                /* Devnest */
+                                {
+                                        title: "Devnest",
+                                        date: "21/12/2020",
+                                        image: devnestImg,
+                                        technos: [
+                                                "HTML", "CSS", "JavaScript", "PHP", "SQL",
+                                        ],
+                                        tools: [
+                                                {
+                                                        store: "preprocessors",
+                                                        name: [ "Sass" ],
+                                                },
+                                                {
+                                                        store: "frameworks",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "builders",
+                                                        name: [ "Parcel.js" ],
+                                                },
+                                                {
+                                                        store: "libraries",
+                                                        name: [ "Isotope-layout"],
+                                                },
+                                                {
+                                                        store: "cmss",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "sgbds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "bdds",
+                                                        name: [ "MySQL", "phpMyAdmin" ],
+                                                },
+                                                {
+                                                        store: "managers",
+                                                        name: [ "NPM", "Composer"],
+                                                },
+                                                {
+                                                        store: "versionnings",
+                                                        name: [ "Git", "GitHub" ],
+                                                },
+                                                {
+                                                        store: "others",
+                                                        name: [],
+                                                },
+                                        ],
+                                        linkProject: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
+                                        excerpt: "Projet de fin de formation réalisé en pair-programming, en conditions réelles de travail en entreprise. Formation Développeur Web et Web Mobile de 6 mois, au sein de l'école O'clock",
+                                        githubLink: "",
+                                        githubIcon: false,
+                                        youtubeLink: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
+                                        youtubeIcon: true,
+                                        wordpressLink: "",
+                                        wordpressIcon: false,
+                                        linkDisplay: "Lien vers la vidéo YouTube",
+                                        finition: "fullstack",
                                 },
                                 
                         ],
