@@ -17,55 +17,55 @@
         class="one-project"
         v-for="(project, index) in projectsList" :key="index"
         >
-                <a class="link-project-card" :href="project.linkProject">
-
                 <!--= TITRE + DATE -->
-                <div class="title-and-date">
-                        <div class="title-and-date__title">
-                                <h3>{{ project.title.toLocaleUpperCase() }}</h3>
-                        </div>
-                        <div class="title-and-date__date">
-                                <p>Date de publication : {{ project.date }}</p>
-                        </div>
-                </div>
-
-                <!--= VIGNETTE + TAGS -->
-                <div class="img-and-tags">
-                        <div class="img-and-tags__img">
-                                <img class="thumbnail" :src="project.image" alt="Vignette du projet concerné"/>
-                        </div>
-                                
-                        <div class="img-and-tags__tags">
-                                <div class="img-and-tags__tags__technos">
-                                        <ul class="technos-container">
-                                                <li
-                                                class="techno"
-                                                v-for="techno in project.technos"
-                                                >
-                                                        {{ techno }}
-                                                </li>
-                                        </ul>
+                <a class="link-project-card" :href="project.linkProject">
+                        <div class="title-and-date">
+                                <div class="title-and-date__title">
+                                        <h3>{{ project.title.toLocaleUpperCase() }}</h3>
                                 </div>
-
-                                <horizontalSeparatorComponent></horizontalSeparatorComponent>
-
-                                <div class="img-and-tags__tags__tools">
-                                        <ul 
-                                        class="tools-container"
-                                        v-for="(tool, index) in project.tools" :key="index"
-                                        >
-                                                <li
-                                                class="tool"
-                                                v-for="nameTool in tool.name"
-                                                >
-                                                        {{ nameTool }}
-                                                </li>
-                                        </ul>
+                                <div class="title-and-date__date">
+                                        <p>Date de publication : {{ project.date }}</p>
                                 </div>
-
-                                <horizontalSeparatorComponent></horizontalSeparatorComponent>
                         </div>
-                </div>
+
+                        <!--= VIGNETTE + TAGS -->
+                        <div class="img-and-tags">
+                                <div class="img-and-tags__img">
+                                        <img class="thumbnail" :src="project.image" alt="Vignette du projet concerné"/>
+                                </div>
+                                        
+                                <div class="img-and-tags__tags">
+                                        <div class="img-and-tags__tags__technos">
+                                                <ul class="technos-container">
+                                                        <li
+                                                        class="techno"
+                                                        v-for="techno in project.technos"
+                                                        >
+                                                                {{ techno }}
+                                                        </li>
+                                                </ul>
+                                        </div>
+
+                                        <horizontalSeparatorComponent></horizontalSeparatorComponent>
+
+                                        <div class="img-and-tags__tags__tools">
+                                                <ul 
+                                                class="tools-container"
+                                                v-for="(tool, index) in project.tools" :key="index"
+                                                >
+                                                        <li
+                                                        class="tool"
+                                                        v-for="nameTool in tool.name"
+                                                        >
+                                                                {{ nameTool }}
+                                                        </li>
+                                                </ul>
+                                        </div>
+
+                                        <horizontalSeparatorComponent></horizontalSeparatorComponent>
+                                </div>
+                        </div>
+                </a>
                         
                 <!--= EXCERPT + ICONE + LIEN -->
                 <div class="excerpt-and-goToTheProject">
@@ -111,7 +111,6 @@
                         </a>
                 </div>
 
-                </a>
         </div>
 </div>
 </template>
