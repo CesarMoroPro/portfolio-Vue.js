@@ -157,10 +157,14 @@ body .important {
   color: #00ff00;
   font-weight: bold;
 }
-body .important-background {
+body .link-white {
+  color: #fcfffd;
+  font-weight: bold;
+}
+body .link-white-background {
   width: 100%;
   height: 20px;
-  background-color: #fcfffd;
+  background-color: #1e7b1e;
   padding: 3px;
 }
 body .display-none {
