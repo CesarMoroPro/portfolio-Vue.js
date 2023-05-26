@@ -128,6 +128,7 @@ En faisant un import des images, le build se fait correctement.
 https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
 */
 import portfolioImg from '../../../src/assets/img/minitatures-projets/portfolio/portfolio-original.png';
+import todoListImg from '../../../src/assets/img/minitatures-projets/todo-list/todo-list.png';
 import acmwebImg from '../../../src/assets/img/minitatures-projets/acmweb/acmweb.png';
 import freeOceanImg from '../../../src/assets/img/minitatures-projets/free-ocean/free-ocean.png';
 import devnestImg from '../../../src/assets/img/minitatures-projets/devnest/devnest.jpg';
@@ -190,10 +191,73 @@ export default {
                                         ],
                                         linkProject: "https://cesar-moro.fr",
                                         excerpt: "Ce projet est mon portfolio, sur lequel vous vous trouvez actuellement ! La version dynamique avec un back-end Node.js est en cours de développement",
-                                        githubLink: "#",
+                                        githubLink: "https://github.com/CesarMoroPro/portfolio-Vue.js",
                                         githubIcon: true,
                                         youtubeLink: "",
                                         youtubeIcon: true,
+                                        wordpressLink: "",
+                                        wordpressIcon: false,
+                                        linkDisplay: "Lien vers le repo GitHub",
+                                        finition: "front-end",
+
+                                },
+
+                                /* Todo-List */
+                                {
+                                        title: "Todo List",
+                                        date: "28/02/2023",
+                                        image: todoListImg,
+                                        technos: [
+                                                "HTML", "CSS", "JavaScript"
+                                        ],
+                                        tools: [
+                                                {
+                                                        store: "preprocessors",
+                                                        name: [ "Sass" ],
+                                                },
+                                                {
+                                                        store: "frameworks",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "builders",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "libraries",
+                                                        name: [ "reset.css"],
+                                                },
+                                                {
+                                                        store: "cmss",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "sgbds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "bdds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "managers",
+                                                        name: [ "NPM"],
+                                                },
+                                                {
+                                                        store: "versionnings",
+                                                        name: [ "Git", "GitHub" ],
+                                                },
+                                                {
+                                                        store: "others",
+                                                        name: ["Responsive", "Statique"],
+                                                },
+                                        ],
+                                        linkProject: "https://todo-list.cesar-moro.fr",
+                                        excerpt: "Traditionnel projet pour tout développeur junior, je n'ai pu y échapper. Alors, je me suis laissé aller sur le style. Une version Full avec un back-end géré en Node.js arrivera dans une version ultérieure.",
+                                        githubLink: "https://github.com/CesarMoroPro/todo-list-js",
+                                        githubIcon: true,
+                                        youtubeLink: "",
+                                        youtubeIcon: false,
                                         wordpressLink: "",
                                         wordpressIcon: false,
                                         linkDisplay: "Lien vers le repo GitHub",
@@ -310,7 +374,7 @@ export default {
                                                 },
                                                 {
                                                         store: "others",
-                                                        name: ["Responsive", "Statique"],
+                                                        name: ["NO Responsive", "Statique"],
                                                 },
                                         ],
                                         linkProject: "https://free-ocean.cesar-moro.fr",

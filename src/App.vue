@@ -32,7 +32,7 @@
         <p>
         NB : Portfolio : V 1.0.0.<br>
         Certaines fonctionnalités ne sont pas encore optimales, voire opérationnelles. De même, certains aspects UX doivent être perfectionnés.<br>
-        Ces améliorations arriveront dans une prochaine version, néanmoins je ne suis pas en mesure de communiquer une date à ce jour.<br>
+        Ces améliorations arriveront dans une prochaine version, pour laquelle je ne suis pas en mesure de communiquer une date à ce jour.<br>
         Merci de votre compréhension.
         </p>
 </div>
