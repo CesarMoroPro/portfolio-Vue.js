@@ -97,7 +97,7 @@ function goVue() {
                                                         <!-- <div class="laser"></div>
                                                         <div class="mask"></div> -->
                                                         <h1 class="rellax" data-rellax-speed="2">César Moro</h1>
-                                                        <h2 class="rellax" data-rellax-speed="1">Portfolio</h2>
+                                                        <h2 class="rellax" data-rellax-speed="1">Développeur<br> Web & Web Mobile</h2>
                                                 </div>
                                         </div>
                                         

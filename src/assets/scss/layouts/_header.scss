@@ -78,9 +78,11 @@
                         }
 
                         h2 {
+                                margin-top: 1em;
+                                text-align: center;
                                 color: black;
-                                font-size: 2em;
-                                letter-spacing: 0.04em;
+                                font-size: 1.7em;
+                                letter-spacing: 0.4em;
 
                                 // Ajout d'un text-shadow via une mixin
                                 @include text-shadow-for-pulse-effect($light-green);
@@ -113,7 +115,8 @@
                         &__name {
 
                                 h2 {
-                                        font-size: 2.5em;
+                                        margin-top: 1.2em;
+                                        font-size: 2em;
                                         letter-spacing: 0.6em;
                                 }
                         }
@@ -127,8 +130,9 @@
                         &__name {
 
                                 h2 {
-                                        font-size: 3em;
-                                        letter-spacing: 1em;
+                                        margin-top: 1.5em;
+                                        font-size: 2.2em;
+                                        letter-spacing: 0.8em;
                                 }
                         }
                 }
@@ -141,8 +145,9 @@
                         &__name {
 
                                 h2 {
-                                        font-size: 3.5em;
-                                        letter-spacing: 1.25em;
+                                        margin-top: 1.8em;
+                                        font-size: 2.5em;
+                                        letter-spacing: 0.9em;
                                 }
                         }
                 }
@@ -155,8 +160,9 @@
                         &__name {
 
                                 h2 {
-                                        font-size: 4em;
-                                        letter-spacing: 1.5em;
+                                        margin-top: 2em;
+                                        font-size: 2.8em;
+                                        letter-spacing: 1em;
                                 }
                         }
                 }
