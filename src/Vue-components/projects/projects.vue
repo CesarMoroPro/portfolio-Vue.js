@@ -127,6 +127,7 @@ Le build de Vite ne sait pas forcément prendre tous les assets pour les inclure
 En faisant un import des images, le build se fait correctement.
 https://cloudinary.com/blog/handle-image-asset-bundling-using-vite-in-vuejs
 */
+import helloMacrosImg from '../../../src/assets/img/minitatures-projets/hello-macros/hello-macros.png';
 import portfolioImg from '../../../src/assets/img/minitatures-projets/portfolio/portfolio-original.png';
 import todoListImg from '../../../src/assets/img/minitatures-projets/todo-list/todo-list.png';
 import acmwebImg from '../../../src/assets/img/minitatures-projets/acmweb/acmweb.png';
@@ -138,6 +139,69 @@ export default {
         data() {
                 return {
                         projectsList: [
+
+                                /* Hello Macros */
+                                {
+                                        title: "Hello Macros !",
+                                        date: "30/05/2023",
+                                        image: helloMacrosImg,
+                                        technos: [
+                                                "HTML", "CSS", "JavaScript"
+                                        ],
+                                        tools: [
+                                                {
+                                                        store: "preprocessors",
+                                                        name: [ "Sass" ],
+                                                },
+                                                {
+                                                        store: "frameworks",
+                                                        name: [ "Vue.js 3" ],
+                                                },
+                                                {
+                                                        store: "builders",
+                                                        name: [ "Vite" ],
+                                                },
+                                                {
+                                                        store: "libraries",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "cmss",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "sgbds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "bdds",
+                                                        name: [],
+                                                },
+                                                {
+                                                        store: "managers",
+                                                        name: [ "NPM" ],
+                                                },
+                                                {
+                                                        store: "versionnings",
+                                                        name: [ "Git", "GitHub" ],
+                                                },
+                                                {
+                                                        store: "others",
+                                                        name: ["Responsive", "Statique"],
+                                                },
+                                        ],
+                                        linkProject: "https://hello-macros.cesar-moro.fr",
+                                        excerpt: "Ce projet est un calculateur de macros-nutriments, géré pour le Front-end par Vue 3, et il est prévu de gérer le back en Node.js avec consommation d'API",
+                                        githubLink: "https://github.com/CesarMoroPro/macro-nutrition",
+                                        githubIcon: true,
+                                        youtubeLink: "",
+                                        youtubeIcon: false,
+                                        wordpressLink: "",
+                                        wordpressIcon: false,
+                                        linkDisplay: "Lien vers le repo GitHub",
+                                        finition: "front-end",
+
+                                },
 
                                 /* Portfolio */
                                 {
@@ -437,7 +501,7 @@ export default {
                                                 },
                                                 {
                                                         store: "others",
-                                                        name: [],
+                                                        name: [ "Responsive", "Dynamique"],
                                                 },
                                         ],
                                         linkProject: "https://www.youtube.com/live/Gbczg095K_A?feature=share&t=3775",
