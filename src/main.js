@@ -65,7 +65,7 @@ function goAtropos() {
 }
 
 function goRellax() {
-        Vue.use(VueRellax);
+        App.use(VueRellax);
 }       
 
 //? - 05 Déclaration de la fonction init()
