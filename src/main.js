@@ -102,8 +102,9 @@ function goVue() {
                                         </div>
 
                                         <div class="presentation">
-                                                <p>Issu d'une reconversion professionnelle en télé-présentiel avec l'&nbsp;<a href="https://oclock.io/" target="blank" class="link link-white link-white-background">École O'clock</a>, je suis à présent disponible pour mettre mes compétences à votre profit.</p>
+                                                <p>Issu d'une reconversion professionnelle en télé-présentiel avec l'&nbsp;<a href="https://oclock.io/" target="blank" class="link link-white link-white-background">École O'clock</a>, je suis dès maintenant disponible pour mettre mes compétences à votre profit.</p>
                                                 <p>En plus des compétences techniques acquises lors de cette <a href="https://oclock.io/formations/developpeur-web" target="blank" class="link link-white link-white-background">formation</a>, j'y ai appris "comment apprendre" et je prends du plaisir à continuer de progresser.</p>
+                                                <p>Bien qu'ayant une fibre artistique musicale évoluée, il n'est est pas de même en graphisme. Gardez simplement à l'esprit que mon domaine est le <span class="link-white-background">développement web</span> et non le graphisme.</p>
                                                 <p>Alors, ensemble, aidons-nous à grandir et à évoluer !</p>
                                         </div>
                                         
